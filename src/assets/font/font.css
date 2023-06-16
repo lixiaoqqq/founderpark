@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "OPPOSans_R";
+    src: url('../fontFamily/OPPOSans-R.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "OPPOSans_M";
+    src: url('../fontFamily/OPPOSans-M.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: "OPPOSans_B";
+    src: url('../fontFamily/OPPOSans-B.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: "OPPOSans_L";
+    src: url('../fontFamily/OPPOSans-L.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+   
+  @font-face {
+    font-family: "OPPOSans_H";
+    src: url('../fontFamily/OPPOSans-H.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
