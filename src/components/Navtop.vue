@@ -173,6 +173,7 @@
   margin-top: 15%;
   h1{
     margin-top: 1%;
+    font-size: 13vw;
   }
  }
 .navtop_item{

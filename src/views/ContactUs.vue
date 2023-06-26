@@ -22,7 +22,7 @@
 
     <div class="Nopublic">
            <div class="nopublic_img">
-                <img src="../assets/ZVWsxT.png" alt="">
+                <img src="../assets/group.png" alt="">
             </div>
            <div class="nopublic_text">
               <p style="font-weight: 700;">及时获取票务优惠信息及大会筹备「 小道消息」</p>
@@ -45,10 +45,8 @@
                 <img src="../assets/ZVWsxT.png" alt="">
             </div>
             <div class="nopublic_text">
-              <p style="font-weight: 700;">与世界同频，率先了解更多 AGI 新鲜内容</p>
-              <p style="
-                  margin-top: 30%;
-              ">扫码关注公众号</p>
+              <p style="font-weight: 700; margin-bottom: 22%;">与世界同频，率先了解更多 AGI 新鲜内容</p>
+              <p style="margin-top: 10%;font-size: 3vw;">扫码关注公众号</p>
           </div>
     </div>
     <br>
@@ -68,25 +66,7 @@
 ">founderpark@geekpark.net</p>
 
     <br>
-    <br>  
-  
     <br>
-    <br>  
-  
-    <br>
-    <br>  
-  
-    <br>
-    <br>  
-    <br>
-    <br>  
-    <br>
-    <br>  
-    <br>
-    <br>  
-    <br>
-    <br>  
-  
   
     <div>
   
@@ -208,7 +188,20 @@
   beforeRouteEnter(to,from,next){
     console.log('beforeRouteEnter');
     window.document.body.style.background='#D9DADA'
-    next()
+    console.log('beforeRouteEnter');
+  // window.document.body.style.background='#D3FF19'
+       const LinnerWidth=window.innerWidth
+        const big_box =document.querySelector('.box_bigbox')
+      console.log(window.innerWidth,'window.innerWidth');
+      if(LinnerWidth>768){
+         console.log(big_box,'big_box');
+        //  big_box.style.display='none'
+          console.log('请使用手机查看网站');
+        //  alert('请使用手机访问网站')
+         next('/404')
+     }else{
+      next()
+  }
   },
   beforeRouteLeave(to,from,next){
     console.log('beforeRouteLeave');
@@ -240,7 +233,7 @@
   display: flex;
     flex-direction: column;
     font-size: 3vw;
-    margin-top: 25%;
+    margin-top: 44%;
 }
   .jointheCommunity{
     width: 100%;
@@ -258,11 +251,10 @@
   }
   .Nopublic{
     display: flex;
-    align-items: center;
     width: 100%;
     // margin-top: 30px;
     margin-top: 10%;
-    justify-content:space-between;
+    justify-content:space-evenly;
     .nopublic_img{
       width: 50%;
       img{
@@ -306,7 +298,7 @@ font-size: 12vw;
 
   .office_hour{
     h2{
-      width: 85%;
+      width: 91%;
       // font-size: 13vw;
     }
   }

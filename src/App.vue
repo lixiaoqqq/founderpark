@@ -141,7 +141,7 @@ html,body,#app{
 
   .SubForum_Text_style{
     display: flex;
-    margin-top: 2%;
+    margin-top: 1%;
 
   }
   .SubForum_Text_style>h1{

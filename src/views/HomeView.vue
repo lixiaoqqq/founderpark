@@ -425,10 +425,7 @@ export default {
     handleCommand(command) {
       this.$message('click on item ' + command);
     },
-    // 滚动事件
-    // gotorouter() {
-    //   this.$router.push('/SubForum');
-    // },
+  
     gotorouter(routers) {
       console.log(routers,'routers');
       this.$router.push(routers);
@@ -503,7 +500,6 @@ if(scrollTop > 500){
 
 if(scrollTop > 800){
       if(this.agiTexts27==''){
-        
             this.appear("创新小赛", "agiTexts32");
             this.appear("/Demo Show>", "agiTexts27");
             this.appear("与投资人、产业方、大模型技术专家和产品专家一起，", "agiTexts28");
@@ -703,6 +699,7 @@ if(scrollTop > 800){
   margin-top: 15%;
   h1{
     margin-top: 1%;
+    font-size: 13vw;
   }
 }
   .aig_show_btn{
@@ -884,7 +881,7 @@ if(scrollTop > 800){
     position: absolute;
     align-items: center;
     justify-content: flex-end;
-    top: 70%;
+    top: 63%;
     left: 3%;
     
   }
@@ -896,7 +893,7 @@ if(scrollTop > 800){
     .img_logo_two{
       width: 38%;
       position: absolute;
-    top: 84%;
+    top: 77%;
     left: 3%;
       img{
         width: 100%;
