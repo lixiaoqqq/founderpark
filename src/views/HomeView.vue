@@ -1,40 +1,73 @@
 
 <template>
-  <div>
-   
-    <div class="warp_box">
+  <div class="box_bigbox">
+              <!--这个为弹框黑色半透明背景-->
+              <div @click="hidePosters" :class="{hidePoster:showPoster} "></div>
+                        <!--这个为弹出的海报组件 第一种方式-->
+         <!-- <invite-poster v-show="showPoster" @hideposter="hidePosters"></invite-poster> -->
+                        <!--这个为弹出的海报组件 第二种方式-->
+          <invite-poster v-show="showPoster" @hideposter="hidePosters"></invite-poster>
+
+  <div class="warp_box">
                 <div class="warp">
-              </div> 
+                  
+                </div> 
             <div class="warp_connect">
-    <div  class="top_fixed" v-if="BoxFixed" >
+             <div  class="top_fixed" v-if="BoxFixed" >
        <div class="fixde_AGI">
-             <div style="color: white;">AGI PLAYGROUND 2023</div>
+             <div class="nav_title" >AGI PLAYGROUND 2023 <span v-if="nav_title_sapn_flag" class="nav_title_sapn"></span>  </div>
             <div>
-              <el-dropdown @command="handleCommand">
+              <!-- <el-dropdown @command="handleCommand"> -->
                   <span class="el-dropdown-link">
-                <i class="el-icon-s-unfold"></i>
-                <!-- <van-icon name="wap-nav"  size="1.3rem" color="#fff" /> -->
+                <i class="el-icon-s-unfold" @click="showPopup" ></i>
+                <!-- <van-icon name="wap-nav" size="1.3rem" color="#fff" /> -->
                   </span>
-                  <el-dropdown-menu slot="dropdown">
+                  <!-- <van-cell is-link @click="showPopup">展示弹出层</van-cell> -->
+                  <van-popup      
+                 v-model="shows"
+                  closeable
+                  position="top"
+                  duration="0.4"
+                  :style="{ height: '80%',backgroundColor:'#D3FF19' }">
+                
+                  <div class="button_navs_top">
+                              <h1 >{{ this.showText1 }}</h1>
+                              <!-- <h1  @click="gotorouter('SubForum')"> {{ this.showText2 }}</h1>  -->
+                              <h1 @click="gotorouter('/GuestSharing')">       {{ this.showText3 }}</h1>
+                              <h1 @click="gotorouter('/ticketingMethod')">       {{ this.showText4 }}</h1>
+                              <h1 @click="gotorouter('/commonProblem')">       {{ this.showText5 }}</h1>
+                              <h1 @click="gotorouter('/ContactUs')">       {{ this.showText6 }}</h1>
+                              <h1  @click="gotorouter('/aboutFounder')">       {{ this.showText7 }}</h1>
+                              <div class="SubForum_Text_style">
+                              <h1  @click="gotorouter('/aboutFounder')">{{ showText8 }}</h1>
+                               <div v-if="Subforum1" class="style_Box1">
+                             <div class="blockStyle3" ></div>
+                            <div class="blockStyle4" ></div>
+                        </div>  
+                     </div>
+                 </div>
+                </van-popup>
+                  <!-- <el-dropdown-menu slot="dropdown">
                     <el-dropdown-item command="a">活动亮点</el-dropdown-item>
                     <el-dropdown-item command="b">三大模块</el-dropdown-item>
                     <el-dropdown-item command="c">嘉宾&议程</el-dropdown-item>
                     <el-dropdown-item command="d">购票方式</el-dropdown-item>
                     <el-dropdown-item command="e">关于Founder</el-dropdown-item>
-                  </el-dropdown-menu>
-                </el-dropdown> 
+                  </el-dropdown-menu> -->
+                <!-- </el-dropdown>  -->
             </div>
        </div>
+
+  
      </div>
+   
                 <div class="dialogue_img">
                 <h1>{{ AIGCText1 }}</h1>          
                 <h1>{{ AIGCText2 }}</h1>          
                 <h1>{{ AIGCText3 }}</h1>    
-                
-                
-                <div v-if="isblockStyle" class="style_Box">
-                    <div class="blockStyle1" ></div>
-                    <div class="blockStyle2" ></div>
+                <div v-if="isblockStyle" class="style_Box_home">
+                    <div class="blockStyle1_home" ></div>
+                    <div class="blockStyle2_home" ></div>
                </div>
               <vue-typed-js
                 class="desc"
@@ -47,128 +80,216 @@
                 <span class="typing"></span>
               </vue-typed-js>
                 </div>  
-                <div class="warp_bottom_img">
+          
+            </div>
+            <div class="warp_bottom_img">
                       <div class="img_logo">
                         <img src="../assets/组 836.png" alt="">
-                      </div>
-                      <div class="bottom_button">
-                            <div @click="goHome">
-                              <p>立即</p>
-                              <p>购票</p>
-                            </div>
-                            <div>
-                              <p>立即</p>
-                              <p>分享</p>
-                            </div>
-                      </div>
-                </div>
+                     </div>
+                     
+            </div>
+     
+            <div class="warp_bottom_img_two">
+                      <div class="img_logo_two">
+                        <img src="../assets/beijing222.png" alt="">
+                     </div>
+                     
             </div>
 
-            <div class="guest">
-                  <br>
-              <br>
-              <br>
-              <br>
-                <!-- <h1 @click="goHome"> 点击打开小程序</h1> -->
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1 @click="gotorouter">{{ this.showText1 }}</h1>
-                <h1  @click="gotorouter1"> {{ this.showText2 }}</h1> 
-                <h1>       {{ this.showText3 }}</h1>
-                <h1>       {{ this.showText4 }}</h1>
-                <h1>       {{ this.showText5 }}</h1>
-                <h1>       {{ this.showText6 }}</h1>
-                <h1>       {{ this.showText7 }}</h1>
-                <h1>       {{ this.showText8 }}</h1>
-                <div v-if="isblockStyle" class="style_Boxs">
-                      <div class="blockStyle1s" ></div>
-                      <div class="blockStyle2s" ></div>
-                  </div>
-             </div>
-
-             <div class="agiText">
+            
+       
+  
+          
+           <div class="agiText">
              <h3> {{ agiTexts1 }}</h3>
              <h3> {{ agiTexts2}}</h3>
              <h3> {{ agiTexts3 }}</h3>
              <h3> {{ agiTexts4 }}</h3>
-             <br>
-             <br>
-             <br>
+             <br><br><br>
              <h3> {{ agiTexts5 }}</h3>
              <h3> {{ agiTexts6 }}</h3>
              <h3> {{ agiTexts7 }}</h3>
-
-             <br>
-             <br>
-
-
+             <br><br><br>
              <h3> {{ agiTexts8 }}</h3>
              <h3> {{ agiTexts9 }}</h3>
              <h3> {{ agiTexts10 }}</h3>
              <h3> {{ agiTexts11 }}</h3>
-
-                <!-- <h3>
-                  AGI Playground 
-                </h3>
-                <h3>
-                  - 
-                </h3> 
-                 <h3>
-                  a place where AGI doers gather, 
-                </h3>
-
-                <h3>
-                  explore & play. 
-                </h3> -->
-             </div>
-
-
-             <div class="videobottom"> 
+           </div>
+          <div class="videobottom"> 
                       <video class="videoStyle" webkit-playsinline="" playsinline="true" preload="none"  poster=""   controls muted loop>
-                        <source src="http://lc-RanMoNzS.cn-n1.lcfile.com/dbXaQw0aMa5Guz5TVcJf7lCD1e74oDGU/h265%E6%96%87%E4%BB%B6.mp4" type="video/mp4">
+                        <source src="http://lc-RanMoNzS.cn-n1.lcfile.com/hOkSoOMf4yV9D3456Dzc8zyGgjOCgNbV/AI%20Quest%E6%A8%AA%E7%89%88_0625_x264.mp4" type="video/mp4">
                       </video>
-              </div>
 
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-     
-        
 
-             
+                      <div class="agi_shwo">
+                        <h1> {{ agiTexts12 }}</h1><br>
+                        <br>
+
+                            <div class="agi_shwo_item">
+                              <h2>{{ agiTexts13 }} </h2>
+                              <h2>{{ agiTexts14 }}</h2>
+
+                                  <br>
+                                  <br>
+                              <p>{{ agiTexts15 }}</p>
+                              <p>{{ agiTexts16 }}</p>
+                              <p>{{ agiTexts17 }}</p>
+                              <p>{{ agiTexts18 }}</p>
+                            </div>
+
+                            <div class="agi_shwo_item">
+                              <h2>{{ agiTexts19 }} </h2>
+                              <h2>{{ agiTexts20 }}</h2>
+
+                                  <br>
+                                  <br>
+                              <p>{{ agiTexts26 }}</p>
+                              <p>{{ agiTexts21 }}</p>
+                              <p>{{ agiTexts22 }}</p>
+                              <p>{{ agiTexts23 }}</p>
+                              <p>{{ agiTexts24 }}</p>
+                              <p>{{ agiTexts25 }}</p>
+                            </div>
+
+                            <div class="agi_shwo_item">
+                              <h2>{{ agiTexts32 }} </h2>
+                              <h2>{{ agiTexts27 }}</h2>
+
+                                  <br>
+                                  <br>
+                              <p>{{ agiTexts28 }}</p>
+                              <p>{{ agiTexts29 }}</p>
+                              <p>{{ agiTexts30 }}</p>
+                              <p>{{ agiTexts31 }}</p>
+                            </div>
+
+                            <div class="agi_shwo_item">
+                              <!-- <h2>{{ agiTexts33 }} </h2> -->
+                              <h2>{{ agiTexts34 }}</h2>
+
+                                  <br>
+                                  <br>
+                              <p>{{ agiTexts35 }}</p>
+                              <p>{{ agiTexts36 }}</p>
+                              <p>{{ agiTexts37 }}</p>
+                              <p>{{ agiTexts38 }}</p>
+                            </div>
+
+                            <div class="agi_shwo_item">
+                              <h2>{{ agiTexts13 }} </h2>
+                              <h2>{{ agiTexts14 }}</h2>
+
+                                  <br>
+                                  <br>
+                              <p>{{ agiTexts15 }}</p>
+                              <p>{{ agiTexts16 }}</p>
+                              <p>{{ agiTexts17 }}</p>
+                              <p>{{ agiTexts18 }}</p>
+                            </div>
+                            
+
+
+                            
+                            <div class="agi_shwo_item">
+                              <h2>{{ agiTexts39 }} </h2>
+                              <h2>{{ agiTexts40 }}</h2>
+                              <h2>{{ agiTexts41 }}</h2>
+
+                                  <br>
+                                  <br>
+                              <p>{{ agiTexts42 }}</p>
+                              <p>{{ agiTexts43 }}</p>
+                              <p>{{ agiTexts44 }}</p>
+                              <p>{{ agiTexts45 }}</p>
+                            </div>
+                            
+                         
+
 
             
-    </div>
- 
+                            <div class="aig_show_btn">
+                              <div   @click="chakan"  class="aig_show_btnck">
+                              查看嘉宾日程
+                              </div>
+                              <div  @click="goupiao" class="aig_show_btngp">
+                              
+                                  立即购票
+                                
+                              </div>
 
+                            </div>
+
+                            <div class="button_nav">
+                              <h1 style="background: black; color: #595757;" @click="goTop">{{ this.showText1 }}</h1>
+                              <!-- <h1  @click="gotorouter('SubForum')"> {{ this.showText2 }}</h1>  -->
+                              <h1 @click="gotorouter('/GuestSharing')">       {{ this.showText3 }}</h1>
+                              <h1 @click="gotorouter('/ticketingMethod')">       {{ this.showText4 }}</h1>
+                              <h1 @click="gotorouter('/commonProblem')">       {{ this.showText5 }}</h1>
+                              <h1 @click="gotorouter('/ContactUs')">       {{ this.showText6 }}</h1>
+                              <h1  @click="gotorouter('/aboutFounder')">       {{ this.showText7 }}</h1>
+                              <div class="SubForum_Text_style">
+                              <h1  @click="gotorouter('/aboutFounder')">{{ showText8 }}</h1>
+                               <div v-if="Subforum1" class="style_Box1">
+                             <div class="blockStyle3" ></div>
+                            <div class="blockStyle4" ></div>
+                        </div>  
+                          </div>
+                            </div>
+                       </div>
+
+                       <div class="footer_img">
+                         <img src="../assets/foter.png" alt="">
+                      </div>
+                 
+                </div>
+            </div>
+         <div class="bottom_button">
+          
+                           <div style="
+                                  border-radius: 50%;
+                                  padding: 23px 12px;
+                                  background: #D3FF19;
+                                  width: 80%;
+                                  color: black;
+                                  text-align: center;
+                              " @click="myhome">
+                              <p>我的</p>
+                            </div>
+                            <div @click="goupiao" >
+                              <p>立即</p>
+                              <p>购票</p>
+                            </div>
+                            <div @click="showExtension">
+                              <p>立即</p>
+                              <p>分享</p>
+                            </div>
+
+                            <div>
+                            </div>
+        </div>
   </div>
-  
   </template>
-  
 <script>
 import Vue from 'vue';
 import { Toast } from 'vant';
 import MobileDetect from 'mobile-detect';
+import InvitePoster from "../components/Invite_poster.vue";
 Vue.use(Toast);
-
 export default {
   data() {
+    
     return {
       property: 'value',
+      showPoster: false,
+      Subforumtimess2:null,
+      Intervaltimes2:null,
+        hidePoster: false,
+        shows: false,
       timess:null,
+      Subforum1:false,
       Intervaltimes:null,
       BoxFixed: false,
+      nav_title_sapn_flag:false,
       showText: "",     // 开场AGI文字
       showText1: "",    // 下方路由1
       showText2: "",    // 下方路由2
@@ -195,14 +316,59 @@ export default {
       agiTexts9: "",    // agiTexts9
       agiTexts10: "",    // agiTexts10
       agiTexts11: "",    // agiTexts11
+      agiTexts12: "",    // agiTexts12
+      agiTexts13: "",    // agiTexts13
+      agiTexts14: "",    // agiTexts14
 
+      agiTexts15: "",    // agiTexts15
+      agiTexts16: "",    // agiTexts16
+      agiTexts17: "",    // agiTexts17
+      agiTexts18: "",    
+
+
+      agiTexts19: "",    
+      agiTexts20: "",    
+      agiTexts21: "",    
+      agiTexts22: "",    
+      agiTexts23: "",    
+      agiTexts24: "",    
+      agiTexts25: "",    
+      agiTexts26: "",    // agiTexts26
+      agiTexts27: "",    
+      agiTexts28: "",    
+      agiTexts29: "",    
+      agiTexts30: "",    
+
+      agiTexts31: "",    
+      agiTexts32: "",    
+
+
+
+
+      agiTexts33: "",    
+      agiTexts34: "",    
+      agiTexts35: "",    
+      agiTexts36: "",    
+      agiTexts37: "",    
+      agiTexts38: "",    
+      agiTexts39: "",    
+      agiTexts40: "",    
+      agiTexts41: "",    
+      agiTexts42: "",    
+      agiTexts43: "",    
+      agiTexts44: "",    
+      agiTexts45: "",    
+
+      
 
       typingTexts: ["",
       ],
       isBlack: true,
-
     };
   },
+  components: {
+      InvitePoster,
+    },
   computed: {
     blockStyle() {
       return {
@@ -216,16 +382,61 @@ export default {
     },
     },
   methods: {
+    showPopup() {
+      this.shows = true;
+    },
+
+    myhome(){
+      window.location.href='https://www.huodongxing.com/user/regevents'
+    },
+    goupiao(){
+      window.location.href=this.$store.state.url
+    },
+    chakan(){
+      this.$router.push('/GuestSharing')
+    },
+    goTop(){
+      console.log('222');
+      let top = document.documentElement.scrollTop//获取点击时页面的滚动条纵坐标位置 
+      const timeTop = setInterval(() => {
+        document.documentElement.scrollTop = top -= 50//一次减50往上滑动
+        if (top <= 0) {
+          clearInterval(timeTop)
+        }
+      }, 5)//定时调用函数使其更顺滑
+    },
+    
+    showExtension() {
+      // 获取用户点击的位置坐标
+    var posterImg=  document.querySelector(".content_container")  
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      console.log(scrollTop,'scrollTop');
+      console.log(posterImg,'posterImg');
+          posterImg.style.top = scrollTop+400 + "px";
+        this.showPoster = true;
+        const rootElement = document.documentElement;
+        rootElement.style.overflow = "hidden";
+        return;
+      },
+      hidePosters() {
+        const rootElement = document.documentElement
+        rootElement.style.overflow = "auto";
+        this.showPoster = false;
+        return;
+      },
     handleCommand(command) {
       this.$message('click on item ' + command);
     },
     // 滚动事件
-    gotorouter() {
-      this.$router.push('/Index');
+    // gotorouter() {
+    //   this.$router.push('/SubForum');
+    // },
+    gotorouter(routers) {
+      console.log(routers,'routers');
+      this.$router.push(routers);
     },
-    gotorouter1() {
-      this.$router.push('/Test');
-    },
+    
+    
     appear(content, property) {
       this[property] = "";
       clearTimeout(this[property + "Timer"]);
@@ -250,7 +461,7 @@ export default {
     },
     handleScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-if(scrollTop > 800){
+if(scrollTop > 300){
   if (this.agiTexts1 === "") {
   this.appear("   AGI Playground ", "agiTexts1");
   this.appear("-", "agiTexts2");
@@ -263,21 +474,93 @@ if(scrollTop > 800){
   this.appear("在许多 AI 产品中，大家常会用 PLAYGROUND 来去指代一 ", "agiTexts8");
   this.appear("个开发或体验环境，能够让开发者、申请用户进行模型的简 ", "agiTexts10");
   this.appear("单搭建、产品功能和用户案例的体验等，比如 OpenAI  ", "agiTexts11");
+
+
+
+  
   // this.appear("explore & play. ", "agiTexts4");
   }
+}
+if(scrollTop > 500){
+      if(this.agiTexts12==''){
+            this.appear("大会亮点> ", "agiTexts12");
+            this.appear(" AGI公开课 ", "agiTexts13");
+            this.appear("/Open Talk> ", "agiTexts14");
+            this.appear("看当下 AGI 领域最具公信力、话语权、前瞻性的行业领袖", "agiTexts15");
+            this.appear("与旗帜人物，", "agiTexts16");
+            this.appear("从技术概念到应用落地，从技术变革到产品创新，", "agiTexts17");
+            this.appear("深扒大模型技术的底层逻辑，起底新范式变革的底层思维。", "agiTexts18");
+            this.appear("AGI 研讨工坊", "agiTexts19");
+            this.appear("/Workshop>", "agiTexts20");
+            this.appear("与率先入场的技术行家、产品玩家和业务专家进行深入交流", "agiTexts26");
+            this.appear("，", "agiTexts21");
+            this.appear("从每个人都能用起来的产品实操，到每个组织都必须思考的", "agiTexts22");
+            this.appear("业务转型，", "agiTexts23");
+            this.appear("全方位把握个体与组织如何丝滑迈入 AGI 时代的的技巧与", "agiTexts24");
+            this.appear("策略。", "agiTexts25");
+      }
+
+}
+
+
+if(scrollTop > 800){
+      if(this.agiTexts27==''){
+        
+            this.appear("创新小赛", "agiTexts32");
+            this.appear("/Demo Show>", "agiTexts27");
+            this.appear("与投资人、产业方、大模型技术专家和产品专家一起，", "agiTexts28");
+            this.appear("看优秀早期大模型创业项目的创新路演，", "agiTexts29");
+            this.appear("和他们面对面交流，让思想得到更新打磨，为创新带来更切", "agiTexts30");
+            this.appear("实可行的灵感。", "agiTexts31");
+            // this.appear("1份", "agiTexts33");
+            this.appear("AGI 创新力量全景图>", "agiTexts34");
+            this.appear("基于 Founder Park 与一线投资人、社区技术专家的联合研", "agiTexts35");
+            this.appear("现场发布完整的、当下 AGI 产业创新力量全景图，", "agiTexts36");
+            this.appear("在描绘产业全貌的同时，帮助创新者们看到更多创新机遇。", "agiTexts37");
+            // this.appear("实可行的灵感。", "agiTexts38");
+
+            this.appear("除此以外，现场还有 ", "agiTexts39");
+
+            this.appear("AGI 体验区 ", "agiTexts40");
+            this.appear("/Play Zone>", "agiTexts41");
+            this.appear("全天候展示模型平台和技术解决方案，直接上手最新创新产", "agiTexts42");
+            this.appear("品和工具，", "agiTexts43");
+            this.appear("在这里，你可以和来自各领域的创新者们自由交流，", "agiTexts44");
+            this.appear("结识更多志同道合之人，遇到有影响力的合作伙伴。", "agiTexts45");
+
+
+   
+            
+      }
+
 }
 
       if (scrollTop > 300) {
         this.BoxFixed = true;
+
+        clearInterval(this.Subforumtimess)
+       this.Subforumtimess = window.setTimeout(()=>{
+        this.Intervaltimes =  window.setInterval(() => {
+            console.log(this.Subforumtimess,'Subforumtimess');
+             this.nav_title_sapn_flag = !this.nav_title_sapn_flag;
+         }, 500);
+        },1000)
         if (this.showText1 === "") {
-          this.appear("主论坛>", "showText1");
-          this.appear("分论坛>", "showText2");
+          this.appear("首页>", "showText1");
+          // this.appear("分论坛>", "showText2");
           this.appear("嘉宾 & 日程>", "showText3");
           this.appear("购票方式>", "showText4");
           this.appear("常见问题>", "showText5");
           this.appear("联系我们>", "showText6");
           this.appear("关于 Founder", "showText7");
           this.appear("Park>", "showText8");
+        clearInterval(this.Subforumtimess2)
+        this.Subforumtimess2 = window.setTimeout(()=>{
+          this.Intervaltimes2 =  window.setInterval(() => {
+              console.log(this.Subforumtimess2,'Subforumtimess');
+              this.Subforum1 = !this.Subforum1;
+          }, 500);
+        },1000)
         }
       } else {
         this.BoxFixed = false;
@@ -297,9 +580,7 @@ if(scrollTop > 800){
   },
   mounted() {
 
-    // setInterval(() => {  
-    //   this.isblockStyle = !this.isblockStyle;
-    // }, 300);
+   
   var typedCursor=document.querySelector('.typed-cursor')
   console.log(typedCursor,'typedCursor');
     this.appear("AGI", "AIGCText1");
@@ -330,6 +611,10 @@ if(scrollTop > 800){
     // clear(timess)
     console.log(this.timess,'destroyed');
     clearInterval(this.timess)
+    window.clearInterval(this.Intervaltimes2); //关闭
+
+    window.clearInterval(this.Subforumtimess2); //关闭
+
     if(this.timess){
       window.clearInterval(this.timess); //关闭
       window.clearInterval(this.Intervaltimes); //关闭
@@ -342,7 +627,6 @@ if(scrollTop > 800){
     if(this.timess){
       window.clearInterval(this.timess); //关闭
       window.clearInterval(this.Intervaltimes); //关闭
-
       this.timess=null
 
     }
@@ -353,7 +637,6 @@ if(scrollTop > 800){
     if(this.timess){
       window.clearInterval(this.timess); //关闭
       window.clearInterval(this.Intervaltimes); //关闭
-
       this.timess=null
          next()
   }
@@ -362,24 +645,64 @@ if(scrollTop > 800){
 </script>
   
 <style lang="scss" scoped>
-  
-  // .typed-element{
-  //   display: block !important;
-  // }
-.style_Box{
+
+.style_Box_home{
   display: flex;
-  position: relative;
-  top: 52.6%;
-    height: 70px;
+  height: 17vw;
+  width: 12%;
 }
-  .blockStyle1{
-    width: 30px;
-    background: black;
-  }
-  .blockStyle2{
-    width: 30px;
+.blockStyle2_home{
+  height: 100%;
     background: white;
+    width: 75%;
+}
+.blockStyle1_home{
+  height: 100%;
+  background: black;
+  width: 25%;
+
+}
+.nav_title{
+  color: white;
+    font-size: 4vw;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    span{
+     width: 10px;
+    display: block;
+    height: 10px;
+    background: white;
+    margin-left: 10px;
+    text-align: center;
+    }
+}
+.button_nav {
+  h1{
+    margin-top: 1%;
   }
+}
+
+
+.button_navs_top{
+  padding-left:5%;
+  margin-top: 15%;
+  h1{
+    margin-top: 1%;
+  }
+}
+  .aig_show_btn{
+    font-family: 'OPPOSans_B';
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+.aig_show_btnck{
+  text-align: center;
+  color: black;
+  background: #FFFFFF;
+  width: 98%;
+  font-size: 13vw
+}
 
   .style_Boxs{
   display: flex;
@@ -387,24 +710,20 @@ if(scrollTop > 800){
     left: 6%;
     bottom: 0;
     height: 70px;
-    left: 40%;
+    // left: 40%;
 }
-  .blockStyle1s{
-    width: 30px;
-    background: black;
+
+  .footer_img{
+    margin-top: 60%;
   }
-  .blockStyle2s{
-    width: 30px;
-    background: white;
-  }
-  
 .warp_box{
   height: 2000px;
 }
 .agiText{
   // background: red;
-  position: relative;
-  bottom: 18%;
+  position: absolute;
+  // bottom: 10%;
+  top: 100%;
   margin-left: 3%;
   h3{
     color: #FFFFFF;
@@ -422,14 +741,29 @@ if(scrollTop > 800){
       position: absolute;
       color: white;
       top: 100%;
-      h1{
+    
+  }
+  .blockStyle1{
+    background: black;
+  }
+  .SubForum_Text_style{
+    // margin-left: 3%;
+    margin-top: 1%;
+
+  }
+  .SubForum_Text_style>h1{
+    width: fit-content;
+        background: black;
+        font-family: 'OPPOSans_L';
+        font-size: 13vw;
+  }
+  .guest>h1{
         width: fit-content;
         background: black;
         font-family: 'OPPOSans_L';
-        margin-top: 4px;
+        margin-top: 2%;
         font-size: 13vw;
         margin-left: 3%;
-      }
   }
   .guest_item_list{
     width: 45%;
@@ -441,7 +775,7 @@ if(scrollTop > 800){
       top: 0;
       z-index: 99;
       text-align: center;
-      background: rgba(238, 238, 238 , 0.5);
+      background: rgba(24, 24, 24 , 0.4);
       // opacity: 0.6;
       // background-image: url('../assets/beijing.png');
       padding: 10px;
@@ -478,21 +812,23 @@ if(scrollTop > 800){
   
   }
   .warp_bottom_img{
-    display: flex;
-    /* background: #000; */
-    position: absolute;
-    bottom: 15%;
-    align-items: center;
-    justify-content:flex-end ;
+    // display: flex;
+    // /* background: #000; */
+    // position: relative;
+    // bottom: 31%;
+    // align-items: center;
+    // justify-content: flex-end;
     // width: 100%;
-    .bottom_button{
+ 
+  }
+  .bottom_button{
       // background: red;
     // margin: 0px 10%;
     position: fixed;
     z-index: 99;
     bottom: 10%;
     right: 10%;
-    div:nth-child(1){
+    div:nth-child(2){
       border-radius: 50%;
       padding: 11px;
       background: #FFFFFF;
@@ -500,11 +836,11 @@ if(scrollTop > 800){
       text-align: center;
    }
 
-   div:nth-child(1):hover{
+   div:nth-child(2):hover{
       background: black;
       color: white;
    }
-      div:nth-child(2){
+      div:nth-child(3){
       border-radius: 50%;
       padding: 11px;
       background: black;
@@ -513,38 +849,48 @@ if(scrollTop > 800){
       text-align: center;
       }
 
-      div:nth-child(2):hover{
+      div:nth-child(3):hover{
       background: #D3FF19;
       color: black;
    }
       // width: 20px;
       // height: 20px;
     }
-  }
-  /* .warp_bottom_img .img_logo{
-     width: 50%;
-  } */
   .warp_bottom_img .img_logo img{
      width: 100%;
     //  background: white;
   }
-  /* .warp_bottom_img .img_address :nth-child(1){
-    width: 50%;
-  } */
+
 
   .warp_bottom_img>.img_logo{
     margin-right: 32%;
-    width: 57%;
+    width: 62%;
+    display: flex;
+    /* background: #000; */
+    position: absolute;
+    align-items: center;
+    justify-content: flex-end;
+    top: 70%;
+    left: 3%;
+    
   }
   .warp_bottom_img>.img_address{
     width: 48%;
   }
   
   
+    .img_logo_two{
+      width: 38%;
+      position: absolute;
+    top: 84%;
+    left: 3%;
+      img{
+        width: 100%;
+      }
+    }
   *{
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
   }
   .warp{
@@ -568,14 +914,15 @@ if(scrollTop > 800){
       flex-wrap: wrap;
       left: 6%;
       h1{
-        font-size: 17vw;
-         width: 90%;
-         color: white;
-         width: fit-content;
+        font-size: 18.4vw;
+        color: white;
+        width: -moz-fit-content;
+        width: fit-content;
         background: black;
-        margin-top: 6px;
-        margin-bottom: 5px;
-        font-family: 'OPPOSans_L';
+        margin-top: 1%;
+        margin-bottom: 1%;
+        font-family: 'OPPOSans_B';
+        line-height: 17.3vw;
       }
   }
 
@@ -586,7 +933,16 @@ if(scrollTop > 800){
       width: 16% !important;
       text-align: center!important;
 }
-  
+// .el-dropdown::v-deep{
+//   span{
+//     i{
+//       font-size: 5vw  !important;
+//     }
+//   }
+// }
+/deep/.el-icon-s-unfold{
+  font-size: 5vw  !important;
+}
   // .videoContainer{
   //   position: fixed;
   //   width: 100%;
@@ -618,12 +974,61 @@ if(scrollTop > 800){
     // background: red;
     // position: fixed;
     // z-index: 999999;
+    width: 100%;
     text-align: center;
-    bottom: 15%;
-    position: relative;
+    position: absolute;
+    top: 150%;
+    margin-top: 20%;
+
     .videoStyle{
-      width: 90%;
+      width: 95%;
       background: black;
     }
   }
+   .hidePoster {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 998;
+     background: rgba(0, 0, 0, 0.6);
+   }
+   .agi_shwo{
+    margin-left: 2.8%;
+    margin-top: 30%;
+   }
+
+
+   .agi_shwo_item{
+margin-top: 13%;
+
+    h2{
+      display: flex;
+      font-size: 9vw;
+      color: #D3FF19;
+      background: black;
+      width: fit-content;
+    }
+    // h2:nth-child(1){
+    //   margin-top: 10%;
+    // }
+    p{
+      display: flex;
+      font-size: 3.4vw;
+      color: white;
+      background: black;
+      width: fit-content;
+    }
+    .agi_shwo_item_img{
+      display: flex;
+      margin-top: 5%;
+      justify-content: space-between;
+      margin-bottom: 5%;
+      width: 98%;
+      img{
+        width: 49%;
+      }
+    }
+   }
   </style>

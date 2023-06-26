@@ -10,10 +10,16 @@ import VueTypedJs from 'vue-typed-js'
 import Videojs from 'video.js'
 import 'video.js/dist/video-js.min.css' 
 Vue.prototype.$video = Videojs 
-import { DropdownMenu, DropdownItem,Icon,ImagePreview,Overlay,Button } from 'vant';
+import { DropdownMenu, DropdownItem,Icon,ImagePreview,Overlay,Button, Tab, Tabs,Popup,Cell   } from 'vant';
 import '@/assets/font/font.css'
-
-
+import CanvasPoster from 'vue-canvas-poster' 
+import 'vant/lib/index.css'
+import '../src/loythcss/dist/index.css'
+Vue.use(CanvasPoster)
+Vue.use(Tab);
+Vue.use(Tabs);
+Vue.use(Popup);
+Vue.use(Cell);
 Vue.use(VueTypedJs)
 Vue.use(ElementUI);
 Vue.use(Overlay);
