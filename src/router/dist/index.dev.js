@@ -59,17 +59,6 @@ var routes = [{
     });
   }
 }, {
-  path: '/Test2',
-  name: 'Test2',
-  // route level code-splitting
-  // this generates a separate chunk (about.[hash].js) for this route
-  // which is lazy-loaded when the route is visited.
-  component: function component() {
-    return Promise.resolve().then(function () {
-      return _interopRequireWildcard(require('../views/Test2.vue'));
-    });
-  }
-}, {
   path: '/MainForum',
   name: 'mainForum',
   // route level code-splitting
@@ -146,6 +135,19 @@ var routes = [{
       return _interopRequireWildcard(require('../views/GuestSharing.vue'));
     });
   }
+}, {
+  path: '/404',
+  component: function component() {
+    return Promise.resolve().then(function () {
+      return _interopRequireWildcard(require('../components/404.vue'));
+    });
+  },
+  hidden: true
+}, //这个*匹配必须放在最后，将改路由配置放到所有路由的配置信息的最后，否则会其他路由path匹配造成影响。     
+{
+  path: '*',
+  redirect: '/404',
+  hidden: true
 }];
 var router = new _vueRouter["default"]({
   mode: 'history',

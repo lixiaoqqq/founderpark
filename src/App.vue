@@ -38,6 +38,7 @@
       BoxFixeds:false,
     };
   },
+
   methods:{
     // handleCommand(command) {
     //     this.$message('click on item ' + command);
@@ -59,7 +60,27 @@
     //     }
     //   },
   },
+
+  beforeRouteEnter(to,from,next){
+  console.log('beforeRouteEnter');
+  // window.document.body.style.background='#D3FF19'
+       const LinnerWidth=window.innerWidth
+        const big_box =document.querySelector('.box_bigbox')
+      console.log(window.innerWidth,'window.innerWidth');
+      if(LinnerWidth>768){
+         console.log(big_box,'big_box');
+        //  big_box.style.display='none'
+          console.log('请使用手机查看网站');
+        //  alert('请使用手机访问网站')
+         next('/404')
+     }else{
+      next()
+  }
+},
   mounted() {
+
+
+    
     // BufferAnimation(1)
   
     },
@@ -90,7 +111,7 @@ html,body,#app{
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'OPPOSans_L';
+  font-family: 'OPPOSans_R';
 
 }
 .el-icon-s-unfold{
@@ -196,7 +217,7 @@ h1{
         background: black;
         margin-top: 1%;
         margin-bottom: 1%;
-        font-family: 'OPPOSans_L';
+        font-family: 'OPPOSans_R';
         line-height: 15.3vw;
       }
 

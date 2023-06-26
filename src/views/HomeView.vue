@@ -202,19 +202,12 @@
                               <p>{{ agiTexts44 }}</p>
                               <p>{{ agiTexts45 }}</p>
                             </div>
-                            
-                         
-
-
-            
                             <div class="aig_show_btn">
                               <div   @click="chakan"  class="aig_show_btnck">
                               查看嘉宾日程
                               </div>
                               <div  @click="goupiao" class="aig_show_btngp">
-                              
                                   立即购票
-                                
                               </div>
 
                             </div>
@@ -243,6 +236,8 @@
                  
                 </div>
             </div>
+
+
          <div class="bottom_button">
           
                            <div style="
@@ -263,17 +258,19 @@
                               <p>立即</p>
                               <p>分享</p>
                             </div>
-
                             <div>
                             </div>
-        </div>
-  </div>
+                         </div>
+                         
+                  </div>
+                  
   </template>
 <script>
 import Vue from 'vue';
 import { Toast } from 'vant';
 import MobileDetect from 'mobile-detect';
 import InvitePoster from "../components/Invite_poster.vue";
+import Errors from "../components/404.vue";
 Vue.use(Toast);
 export default {
   data() {
@@ -368,6 +365,7 @@ export default {
   },
   components: {
       InvitePoster,
+      Errors,
     },
   computed: {
     blockStyle() {
@@ -578,8 +576,8 @@ if(scrollTop > 800){
       console.log(qrId, 'qrId');
     }
   },
-  mounted() {
 
+  mounted() {
    
   var typedCursor=document.querySelector('.typed-cursor')
   console.log(typedCursor,'typedCursor');
@@ -632,6 +630,22 @@ if(scrollTop > 800){
     }
 
   },
+  beforeRouteEnter(to,from,next){
+  console.log('beforeRouteEnter');
+  // window.document.body.style.background='#D3FF19'
+       const LinnerWidth=window.innerWidth
+        const big_box =document.querySelector('.box_bigbox')
+      console.log(window.innerWidth,'window.innerWidth');
+      if(LinnerWidth>768){
+         console.log(big_box,'big_box');
+        //  big_box.style.display='none'
+          console.log('请使用手机查看网站');
+        //  alert('请使用手机访问网站')
+         next('/404')
+     }else{
+      next()
+  }
+},
   beforeRouteLeave(to, from, next) {
     console.log(this.timess,'beforeRouteLeave');
     if(this.timess){
