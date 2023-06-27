@@ -109,7 +109,7 @@
     currentView:"Tab1",
     guestlist:[
       {
-          datatime:"7月29日",
+          datatime:"7月22日",
           children:[
             {
               titlename:'Open Talk',
@@ -149,7 +149,7 @@
           ]
       },
       {
-          datatime:"7月30日",
+          datatime:"7月23日",
           children:[
             {
               titlename:'Open Talk',
@@ -270,8 +270,8 @@
 
     console.log(this.guestlist,'guestlist');
     window.addEventListener('scroll', this.handleScroll, true);
-    this.appear("32 位嘉宾 ", "SubforumText");
-    this.appear("与分享话题：", "SubforumText1");
+    this.appear("拟定 ", "SubforumText");
+    this.appear("嘉宾日程：", "SubforumText1");
     // this.appear("购票方式", "SubforumText3");
     clearInterval(this.Subforumtimess)
     clearInterval(this.Intervaltimes)
@@ -285,7 +285,20 @@
   beforeRouteEnter(to,from,next){
     console.log('beforeRouteEnter');
     window.document.body.style.background='#D9DADA'
-    next()
+    console.log('beforeRouteEnter');
+  // window.document.body.style.background='#D3FF19'
+       const LinnerWidth=window.innerWidth
+        const big_box =document.querySelector('.box_bigbox')
+      console.log(window.innerWidth,'window.innerWidth');
+      if(LinnerWidth>768){
+         console.log(big_box,'big_box');
+        //  big_box.style.display='none'
+          console.log('请使用手机查看网站');
+        //  alert('请使用手机访问网站')
+         next('/404')
+     }else{
+      next()
+  }
   },
   beforeRouteLeave(to,from,next){
     console.log('beforeRouteLeave');
@@ -424,7 +437,6 @@ div{
     word-break: break-word;
     width: 95%;
     margin-left: auto;
-    font-weight: 800;
   
   
     li{
@@ -489,7 +501,6 @@ div{
     .ticket_sales_Txte{
       display: flex;
       flex-direction: column;
-    font-weight: 800;
     }
     .ticket_sales_button{
       background: white;

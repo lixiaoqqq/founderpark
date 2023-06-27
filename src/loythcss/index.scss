@@ -1,7 +1,5 @@
-
 .aig_show_btngp{
     text-align: center;
-    font-family: "OPPOSans_B";
     background: #D3FF19;
     width: 98%;
     color: black;
@@ -14,7 +12,6 @@
     .tablist_itme{
     margin-bottom: 3%;
     }
-    
     .Innovative_Power{
         background: #E0E0E0;
         padding: 10% 2%;
@@ -30,7 +27,6 @@
                 font-size: 3.5vw;
             }
         }
-     
     }
     .tablist>p{
     font-size: 8vw;
@@ -48,8 +44,6 @@
     display: flex;
     padding: 10px 0;
     justify-content: space-between ;
-    
-    
     }
     .tablist_itme_list_ms{
     width: 50%;
@@ -60,7 +54,6 @@
     width: 100%;
     }
     }
-    
     .tablist_itme_list_wz{
     width: 25%
     }
@@ -124,8 +117,6 @@
     word-break: break-word;
     width: 95%;
     margin-left: auto;
-    font-weight: 800;
-    
     
     li{
     width: 96%;
@@ -177,7 +168,6 @@
     // .ticket_sales_Txte{
     // display: flex;
     // flex-direction: column;
-    // font-weight: 800;
     // }
     // .ticket_sales_button{
     // background: white;
@@ -196,6 +186,6 @@
     // }
     
     .blockSztyle2{
-    height: 5%;
+    height: 10% !important;
     background: black;
     }

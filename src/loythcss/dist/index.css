@@ -1,6 +1,5 @@
 .aig_show_btngp {
   text-align: center;
-  font-family: "OPPOSans_B";
   background: #D3FF19;
   width: 98%;
   color: black;
@@ -22,7 +21,6 @@
 }
 .Innovative_Power h3 {
   font-size: 8vw;
-  font-family: "OPPOSans_B";
   margin: 5% 0;
 }
 .Innovative_Power .power_span {
@@ -117,7 +115,6 @@
   word-break: break-word;
   width: 95%;
   margin-left: auto;
-  font-weight: 800;
 }
 .ul_list li {
   width: 96%;
@@ -159,6 +156,6 @@
 }
 
 .blockSztyle2 {
-  height: 5%;
+  height: 10% !important;
   background: black;
 }

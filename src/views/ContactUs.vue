@@ -25,10 +25,10 @@
                 <img src="../assets/group.png" alt="">
             </div>
            <div class="nopublic_text">
-              <p style="font-weight: 700;">及时获取票务优惠信息及大会筹备「 小道消息」</p>
+              <p style="">及时获取票务优惠信息及大会筹备「 小道消息」</p>
 
               <div class="nopublic_text_bon">
-                <span >扫码添加小助手，</span>
+                <span >微信扫码添加小助手，</span>
                  <span>加入活动官方群</span>
               </div>
               
@@ -45,8 +45,8 @@
                 <img src="../assets/ZVWsxT.png" alt="">
             </div>
             <div class="nopublic_text">
-              <p style="font-weight: 700; margin-bottom: 22%;">与世界同频，率先了解更多 AGI 新鲜内容</p>
-              <p style="margin-top: 10%;font-size: 3vw;">扫码关注公众号</p>
+              <p style=" margin-bottom: 22%;">与世界同频，率先了解更多 AGI 新鲜内容</p>
+              <p style="margin-top: 10%;font-size: 3vw;">微信扫码关注公众号</p>
           </div>
     </div>
     <br>
@@ -167,7 +167,7 @@
   },
   mounted(){
     window.addEventListener('scroll', this.handleScroll, true);
-    this.appear("联系我们 :", "SubforumText");
+    this.appear("联系我们：", "SubforumText");
     // clearInterval(this.Subforumtimess)
     //    this.Subforumtimess = window.setTimeout(()=>{
     //     this.Intervaltimes =  window.setInterval(() => {
@@ -285,7 +285,6 @@
     word-break: break-word;
     width: 95%;
     margin-left: auto;
-    font-weight: 800;
   
   
     li{
@@ -325,7 +324,6 @@ font-size: 12vw;
     .ticket_sales_Txte{
       display: flex;
       flex-direction: column;
-    font-weight: 800;
     }
     .ticket_sales_button{
       background: white;

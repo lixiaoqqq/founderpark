@@ -240,7 +240,20 @@
   beforeRouteEnter(to,from,next){
     console.log('beforeRouteEnter');
     window.document.body.style.background='#D3FF19'
-    next()
+    console.log('beforeRouteEnter');
+  // window.document.body.style.background='#D3FF19'
+       const LinnerWidth=window.innerWidth
+        const big_box =document.querySelector('.box_bigbox')
+      console.log(window.innerWidth,'window.innerWidth');
+      if(LinnerWidth>768){
+         console.log(big_box,'big_box');
+        //  big_box.style.display='none'
+          console.log('请使用手机查看网站');
+        //  alert('请使用手机访问网站')
+         next('/404')
+     }else{
+      next()
+  }
   },
   beforeRouteLeave(to,from,next){
     console.log('beforeRouteLeave');
@@ -282,7 +295,6 @@
     word-break: break-word;
     width: 95%;
     margin-left: auto;
-    font-weight: 800;
   
   
     li{
@@ -315,7 +327,6 @@
     .ticket_sales_Txte{
       display: flex;
       flex-direction: column;
-    font-weight: 800;
     }
     .ticket_sales_button{
       background: white;

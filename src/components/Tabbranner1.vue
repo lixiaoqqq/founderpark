@@ -2,7 +2,7 @@
 
   <div class="tablist">
     <p>
-       Openn Talk
+       Open Talk
     </p>
     <div class="tablist_itme">
         <div class="tablist_itme_time">
@@ -89,6 +89,7 @@
 
 
   <div class="item_color">
+    <br>
       <p>
              Workshop A
     </p>

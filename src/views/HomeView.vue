@@ -15,7 +15,11 @@
             <div class="warp_connect">
              <div  class="top_fixed" v-if="BoxFixed" >
        <div class="fixde_AGI">
-             <div class="nav_title" >AGI PLAYGROUND 2023 <span v-if="nav_title_sapn_flag" class="nav_title_sapn"></span>  </div>
+             <div class="nav_title"  >AGI PLAYGROUND 2023
+               <!-- <span v-if="nav_title_sapn_flag" class="nav_title_sapn"></span>  -->
+              
+              
+              </div>
             <div>
               <!-- <el-dropdown @command="handleCommand"> -->
                   <span class="el-dropdown-link">
@@ -26,6 +30,7 @@
                   <van-popup      
                  v-model="shows"
                   closeable
+                  close-icon="http://lc-RanMoNzS.cn-n1.lcfile.com/1hsCGAIF6prDox6YTyKcNVAQ6OdrCLlM/CLOSE_.png"
                   position="top"
                   duration="0.4"
                   :style="{ height: '80%',backgroundColor:'#D3FF19' }">
@@ -91,7 +96,10 @@
      
             <div class="warp_bottom_img_two">
                       <div class="img_logo_two">
-                        <img src="../assets/beijing222.png" alt="">
+                        <p>北京 751D·PARK</p>
+                        <p style="
+                          font-size: 6vw;
+                      ">07/22-07/23</p>
                      </div>
                      
             </div>
@@ -105,43 +113,54 @@
              <h3> {{ agiTexts2}}</h3>
              <h3> {{ agiTexts3 }}</h3>
              <h3> {{ agiTexts4 }}</h3>
-             <br><br><br>
              <h3> {{ agiTexts5 }}</h3>
              <h3> {{ agiTexts6 }}</h3>
+             <br><br>
              <h3> {{ agiTexts7 }}</h3>
-             <br><br><br>
+             <h3> {{ agiTexts }}</h3>
              <h3> {{ agiTexts8 }}</h3>
              <h3> {{ agiTexts9 }}</h3>
              <h3> {{ agiTexts10 }}</h3>
              <h3> {{ agiTexts11 }}</h3>
+             <h3> {{ agiText1 }}</h3>
+             <h3> {{ agiText2 }}</h3>
+             <h3> {{ agiText3 }}</h3>
+             <h3> {{ agiText4 }}</h3>
+             <br><br>
+             <h3> {{ agiText5 }}</h3>
+             <h3> {{ agiText6 }}</h3> 
+             <h3> {{ agiText7 }}</h3>
+             <br><br>
+             <h3 style="font-family:'OPPOSans_B';"> {{ agiText8 }}</h3>
+             <h3 style="font-family:'OPPOSans_B';"> {{ agiText9 }}</h3>
+             <h3 style="font-family:'OPPOSans_B';"> {{ agiText10 }}</h3>
+             <h3 style="font-family:'OPPOSans_B';"> {{ agiText11 }}</h3>
            </div>
           <div class="videobottom"> 
-                      <video class="videoStyle" webkit-playsinline="" playsinline="true" preload="none"  poster=""   controls muted loop>
+                      <video ref="video" class="videoStyle" webkit-playsinline="" playsinline="true" preload="none"  poster="../assets/4042.jpeg" x5-video-player-type="h5"    controls muted loop>
                         <source src="http://lc-RanMoNzS.cn-n1.lcfile.com/hOkSoOMf4yV9D3456Dzc8zyGgjOCgNbV/AI%20Quest%E6%A8%AA%E7%89%88_0625_x264.mp4" type="video/mp4">
                       </video>
-
+                      <!-- <button @click="toggleFullScreen">
+                      <h1>
+                        全屏
+                      </h1>
+                      </button> -->
 
                       <div class="agi_shwo">
                         <h1> {{ agiTexts12 }}</h1><br>
                         <br>
-
                             <div class="agi_shwo_item">
                               <h2>{{ agiTexts13 }} </h2>
                               <h2>{{ agiTexts14 }}</h2>
-
-                                  <br>
                                   <br>
                               <p>{{ agiTexts15 }}</p>
                               <p>{{ agiTexts16 }}</p>
                               <p>{{ agiTexts17 }}</p>
                               <p>{{ agiTexts18 }}</p>
                             </div>
-
                             <div class="agi_shwo_item">
                               <h2>{{ agiTexts19 }} </h2>
                               <h2>{{ agiTexts20 }}</h2>
-
-                                  <br>
                                   <br>
                               <p>{{ agiTexts26 }}</p>
                               <p>{{ agiTexts21 }}</p>
@@ -150,24 +169,18 @@
                               <p>{{ agiTexts24 }}</p>
                               <p>{{ agiTexts25 }}</p>
                             </div>
-
                             <div class="agi_shwo_item">
                               <h2>{{ agiTexts32 }} </h2>
                               <h2>{{ agiTexts27 }}</h2>
-
-                                  <br>
                                   <br>
                               <p>{{ agiTexts28 }}</p>
                               <p>{{ agiTexts29 }}</p>
                               <p>{{ agiTexts30 }}</p>
                               <p>{{ agiTexts31 }}</p>
                             </div>
-
                             <div class="agi_shwo_item">
                               <!-- <h2>{{ agiTexts33 }} </h2> -->
                               <h2>{{ agiTexts34 }}</h2>
-
-                                  <br>
                                   <br>
                               <p>{{ agiTexts35 }}</p>
                               <p>{{ agiTexts36 }}</p>
@@ -178,24 +191,16 @@
                             <div class="agi_shwo_item">
                               <h2>{{ agiTexts13 }} </h2>
                               <h2>{{ agiTexts14 }}</h2>
-
-                                  <br>
                                   <br>
                               <p>{{ agiTexts15 }}</p>
                               <p>{{ agiTexts16 }}</p>
                               <p>{{ agiTexts17 }}</p>
                               <p>{{ agiTexts18 }}</p>
                             </div>
-                            
-
-
-                            
                             <div class="agi_shwo_item">
                               <h2>{{ agiTexts39 }} </h2>
                               <h2>{{ agiTexts40 }}</h2>
                               <h2>{{ agiTexts41 }}</h2>
-
-                                  <br>
                                   <br>
                               <p>{{ agiTexts42 }}</p>
                               <p>{{ agiTexts43 }}</p>
@@ -242,21 +247,29 @@
           
                            <div style="
                                   border-radius: 50%;
-                                  padding: 23px 12px;
+                                  padding: 11px 12px;
                                   background: #D3FF19;
                                   width: 80%;
                                   color: black;
                                   text-align: center;
-                              " @click="myhome">
-                              <p>我的</p>
-                            </div>
-                            <div @click="goupiao" >
+                                  border: 1px solid;
+                              " 
+                              @click="goupiao" 
+                              >
                               <p>立即</p>
                               <p>购票</p>
                             </div>
-                            <div @click="showExtension">
+                            <div 
+                            @click="showExtension"
+                            >
                               <p>立即</p>
                               <p>分享</p>
+                            </div>
+                            <div 
+                            @click="myhome"
+                           >
+                              <p>个人</p>
+                              <p>中心</p>
                             </div>
                             <div>
                             </div>
@@ -286,7 +299,7 @@ export default {
       Subforum1:false,
       Intervaltimes:null,
       BoxFixed: false,
-      nav_title_sapn_flag:false,
+      // nav_title_sapn_flag:false,
       showText: "",     // 开场AGI文字
       showText1: "",    // 下方路由1
       showText2: "",    // 下方路由2
@@ -356,8 +369,18 @@ export default {
       agiTexts44: "",    
       agiTexts45: "",    
 
-      
-
+      agiText10:'',
+      agiText9:'',
+      agiText8:'',
+      agiText7:'',
+      agiText6:'',
+      agiText5:'',
+      agiText4:'',
+      agiText3:'',
+      agiText2:'',
+      agiText1:'',
+      agiText11:'',
+      agiTexts:'',
       typingTexts: ["",
       ],
       isBlack: true,
@@ -380,6 +403,34 @@ export default {
     },
     },
   methods: {
+
+    toggleFullScreen() {
+      const video = this.$refs.video;
+      
+
+      console.log(video,'video');
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      } else if (video.mozRequestFullScreen) {
+        video.mozRequestFullScreen();
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      }
+    },
+    exitFullScreen() {
+      if (!document.fullscreenElement) {
+        const video = this.$refs.video;
+        if (video.webkitExitFullscreen) {
+          video.webkitExitFullscreen();
+        } else if (video.mozCancelFullScreen) {
+          video.mozCancelFullScreen();
+        } else if (video.msExitFullscreen) {
+          video.msExitFullscreen();
+        }
+      }
+    },
     showPopup() {
       this.shows = true;
     },
@@ -458,17 +509,30 @@ export default {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 if(scrollTop > 300){
   if (this.agiTexts1 === "") {
-  this.appear("   AGI Playground ", "agiTexts1");
-  this.appear("-", "agiTexts2");
-  this.appear("a place where AGI doers gather, ", "agiTexts3");
-  this.appear("explore & play. ", "agiTexts4");
-  this.appear("在一个技术新浪潮到来之时， ", "agiTexts5");
-  this.appear("不错过它的最好方式， ", "agiTexts6");
-  this.appear("就是亲身去上手、去体验、去探索，去沉浸其中。 ", "agiTexts7");
-  this.appear("Playground 概念来源 —— ", "agiTexts6");
-  this.appear("在许多 AI 产品中，大家常会用 PLAYGROUND 来去指代一 ", "agiTexts8");
-  this.appear("个开发或体验环境，能够让开发者、申请用户进行模型的简 ", "agiTexts10");
-  this.appear("单搭建、产品功能和用户案例的体验等，比如 OpenAI  ", "agiTexts11");
+  this.appear(" Playground 概念来源 ——", "agiTexts1");
+  this.appear("在许多 AI 产品中，大家常会用 PLAYGROUND 来去指代一", "agiTexts2");
+  this.appear("个开发或体验环境，能够让开发者、申请用户进行模型的简 ", "agiTexts3");
+  this.appear("单搭建、产品功能和用户案例的体验等，比如 OpenAI . ", "agiTexts4");
+  this.appear("Playground，Cohere Playground，NVIDIA AI Play- ", "agiTexts5");
+  this.appear("ground …", "agiTexts6");
+  this.appear("随着技术的不断变革，全新的 AGI 浪潮正席卷而来 ", "agiTexts7");
+  this.appear("。", "agiTexts");
+  this.appear("我们已经看到在这波浪潮中，聚集着一批属于 AGI ", "agiTexts8");
+  this.appear("时代的 Doers，他们 ——  ", "agiTexts10");
+  this.appear("对 AGI 时代的新变化充满着求知和好奇； ", "agiTexts11");
+  this.appear(" 拥有专业的垂直领域认知；", "agiText1");
+  this.appear(" 有改造世界的意愿；", "agiText2");
+  this.appear(" 是一群具有 AI 原生创新思维（AI-Native）的创业", "agiText3");
+  this.appear(" 者。", "agiText4");
+  this.appear(" 身处于这样的技术新浪潮中，", "agiText5");
+  this.appear(" 不错过它的最好方式，", "agiText6");
+  this.appear(" 就是亲身去体验、去探索、去沉浸其中。", "agiText7");
+  this.appear(" AGI Playground ", "agiText8");
+  this.appear(" - ", "agiText9");
+  this.appear(" 让我们与 AGI 行动者们在这里聚集、探索和相互启", "agiText10");
+  this.appear(" 发。", "agiText11");
+
+  
 
 
 
@@ -533,12 +597,12 @@ if(scrollTop > 800){
         this.BoxFixed = true;
 
         clearInterval(this.Subforumtimess)
-       this.Subforumtimess = window.setTimeout(()=>{
-        this.Intervaltimes =  window.setInterval(() => {
-            console.log(this.Subforumtimess,'Subforumtimess');
-             this.nav_title_sapn_flag = !this.nav_title_sapn_flag;
-         }, 500);
-        },1000)
+      //  this.Subforumtimess = window.setTimeout(()=>{
+      //   this.Intervaltimes =  window.setInterval(() => {
+      //       console.log(this.Subforumtimess,'Subforumtimess');
+      //        this.nav_title_sapn_flag = !this.nav_title_sapn_flag;
+      //    }, 500);
+      //   },1000)
         if (this.showText1 === "") {
           this.appear("首页>", "showText1");
           // this.appear("分论坛>", "showText2");
@@ -574,7 +638,10 @@ if(scrollTop > 800){
   },
 
   mounted() {
-   
+    // document.addEventListener("fullscreenchange", this.exitFullScreen);
+    // document.addEventListener("webkitfullscreenchange", this.exitFullScreen);
+    // document.addEventListenebeforeDestroyr("mozfullscreenchange", this.exitFullScreen);
+    // document.addEventListener("MSFullscreenChange", this.exitFullScreen);
   var typedCursor=document.querySelector('.typed-cursor')
   console.log(typedCursor,'typedCursor');
     this.appear("AGI", "AIGCText1");
@@ -617,6 +684,10 @@ if(scrollTop > 800){
     }
   },
   beforeDestroy(){
+    // document.removeEventListener("fullscreenchange", this.exitFullScreen);
+    // document.removeEventListener("webkitfullscreenchange", this.exitFullScreen);
+    // document.removeEventListener("mozfullscreenchange", this.exitFullScreen);
+    // document.removeEventListener("MSFullscreenChange", this.exitFullScreen);
     console.log(this.timess,'beforeDestroy');
     if(this.timess){
       window.clearInterval(this.timess); //关闭
@@ -675,9 +746,11 @@ if(scrollTop > 800){
 .nav_title{
   color: white;
     font-size: 4vw;
-    font-weight: 600;
     display: flex;
     align-items: center;
+    font-family:'OPPOSans_B' ;
+    margin-left: 1%;
+    width: 90%;
     span{
      width: 10px;
     display: block;
@@ -703,9 +776,8 @@ if(scrollTop > 800){
   }
 }
   .aig_show_btn{
-    font-family: 'OPPOSans_B';
-    margin-top: 10%;
-    margin-bottom: 15%;
+    margin-top: 30%;
+    margin-bottom: 40%;
   }
 .aig_show_btnck{
   text-align: center;
@@ -741,7 +813,7 @@ if(scrollTop > 800){
     width: fit-content;
     background: black;
     font-size: 3.5vw;
-    font-family: 'OPPOSans_L';
+    font-family: 'OPPOSans_R';
 
   }
 }
@@ -765,13 +837,13 @@ if(scrollTop > 800){
   .SubForum_Text_style>h1{
     width: fit-content;
         background: black;
-        font-family: 'OPPOSans_L';
+        font-family: 'OPPOSans_R';
         font-size: 13vw;
   }
   .guest>h1{
         width: fit-content;
         background: black;
-        font-family: 'OPPOSans_L';
+        // font-family: 'OPPOSans_L';
         margin-top: 2%;
         font-size: 13vw;
         margin-left: 3%;
@@ -793,7 +865,6 @@ if(scrollTop > 800){
       .fixde_AGI{
         display: flex;
         width: 96%;
-        justify-content: space-between;
         color: white;
 
       }
@@ -815,7 +886,6 @@ if(scrollTop > 800){
   .typed-element,.typed-cursor{
     font-size: 70px;
     color: white;
-    font-weight: 800;
     display: none;
   }
   .guest_item img{
@@ -845,6 +915,7 @@ if(scrollTop > 800){
       background: #FFFFFF;
       width: 80%;
       text-align: center;
+      border: 1px solid ;
    }
 
    div:nth-child(2):hover{
@@ -857,6 +928,7 @@ if(scrollTop > 800){
       background: black;
       width: 80%;
       color: #D3FF19;
+      border: 1px solid ;
       text-align: center;
       }
 
@@ -894,6 +966,7 @@ if(scrollTop > 800){
       width: 38%;
       position: absolute;
     top: 77%;
+    color: white;
     left: 3%;
       img{
         width: 100%;
@@ -925,7 +998,7 @@ if(scrollTop > 800){
       flex-wrap: wrap;
       left: 6%;
       h1{
-        font-size: 18.4vw;
+        font-size: 16.4vw;
         color: white;
         width: -moz-fit-content;
         width: fit-content;
@@ -953,6 +1026,12 @@ if(scrollTop > 800){
 // }
 /deep/.el-icon-s-unfold{
   font-size: 5vw  !important;
+}
+/deep/.van-popup__close-icon{
+    font-size:60px !important;
+}
+/deep/.van-popup__close-icon{
+font-size: 60px!important;
 }
   // .videoContainer{
   //   position: fixed;
@@ -988,7 +1067,7 @@ if(scrollTop > 800){
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 150%;
+    top: 190%;
     margin-top: 20%;
 
     .videoStyle{
@@ -1012,7 +1091,7 @@ if(scrollTop > 800){
 
 
    .agi_shwo_item{
-margin-top: 13%;
+margin-top: 20%;
 
     h2{
       display: flex;

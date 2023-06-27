@@ -2,7 +2,7 @@
 
   <div class="tablist">
     <p>
-       Openn Talk  7月30号
+       Open Talk  7月23号
     </p>
     <div class="tablist_itme">
         <div class="tablist_itme_time">
@@ -89,6 +89,8 @@
 
 
   <div class="item_color">
+    <br>
+    
       <p>
              Workshop A
     </p>

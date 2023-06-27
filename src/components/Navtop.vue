@@ -1,6 +1,8 @@
 <template>
    <div class="fixde_AGI">
-             <div class="nav_title">AGI PLAYGROUND 2023 <span v-if="nav_title_sapn_flag" class="nav_title_sapn"></span>
+             <div class="nav_title" @click="gotorouter('/')">AGI PLAYGROUND 2023 
+              
+              <!-- <span v-if="nav_title_sapn_flag" class="nav_title_sapn"></span> -->
             </div>
             <div>
               <!-- <el-dropdown @command="handleCommand"> -->
@@ -12,6 +14,7 @@
                 <van-popup      
                  v-model="shows"
                   closeable
+                  close-icon="http://lc-RanMoNzS.cn-n1.lcfile.com/1hsCGAIF6prDox6YTyKcNVAQ6OdrCLlM/CLOSE_.png"
                   position="top"
                   duration="0.4"
                   :style="{ height: '80%',backgroundColor:'#D3FF19' }">
@@ -32,7 +35,7 @@
                         </div>  
                      </div>
                  </div>
-      
+                 <!-- <img src="" alt=""> -->
 
 
 
@@ -59,7 +62,7 @@
     return {
       property: 'value',
       BoxFixeds:false,
-      nav_title_sapn_flag:false,
+      // nav_title_sapn_flag:false,
       shows:false,
       showText1:"",
       showText2:"",
@@ -138,13 +141,13 @@
       },
   },
     mounted() {
-      clearInterval(this.Subforumtimess)
-       this.Subforumtimess = window.setTimeout(()=>{
-        this.Intervaltimes =  window.setInterval(() => {
-            console.log(this.Subforumtimess,'Subforumtimess');
-             this.nav_title_sapn_flag = !this.nav_title_sapn_flag;
-         }, 500);
-        },1000)
+      // clearInterval(this.Subforumtimess)
+      //  this.Subforumtimess = window.setTimeout(()=>{
+      //   this.Intervaltimes =  window.setInterval(() => {
+      //       console.log(this.Subforumtimess,'Subforumtimess');
+      //        this.nav_title_sapn_flag = !this.nav_title_sapn_flag;
+      //    }, 500);
+      //   },1000)
     },
     destroyed() { //离开这个界面之后，删除滚动事件，不然容易除bug
       window.removeEventListener('scroll', this.handleScroll)
@@ -159,6 +162,17 @@
 
 
 <style lang="scss" scoped>
+
+
+/deep/.el-icon-s-unfold{
+  font-size: 5vw  !important;
+}
+/deep/.van-popup__close-icon{
+    font-size:60px !important;
+}
+/deep/.van-popup__close-icon{
+font-size: 60px!important;
+}
 .fixde_AGI{
     width: 90%;
     margin: 0 auto;
@@ -187,9 +201,9 @@
 .nav_title{
   color: white;
     font-size: 4vw;
-    font-weight: 600;
     display: flex;
     align-items: center;
+    font-family:'OPPOSans_B' ;
     span{
      width: 10px;
     display: block;

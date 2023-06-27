@@ -112,8 +112,9 @@ html,body,#app{
   padding: 0;
   text-decoration: none;
   font-family: 'OPPOSans_R';
-
 }
+
+
 .el-icon-s-unfold{
   font-size: 20px;
   color: white  ;
@@ -210,7 +211,7 @@ html,body,#app{
     background: black;
 }
 h1{
-        font-size: 14.4vw;
+        font-size: 11vw;
         color: white;
         width: -moz-fit-content;
         width: fit-content;

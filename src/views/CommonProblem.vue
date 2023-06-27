@@ -189,7 +189,7 @@
     mounted(){
       window.addEventListener('scroll', this.handleScroll, true);
       this.appear("常见问题", "SubforumText");
-      this.appear("Q&A:", "SubforumText1");
+      this.appear("Q&A：", "SubforumText1");
       clearInterval(this.Subforumtimess)
          this.Subforumtimess = window.setTimeout(()=>{
           this.Intervaltimes =  window.setInterval(() => {
