@@ -1,6 +1,6 @@
 <template>
     <div  @click="gp" class="ticket_sales_button"> 
-              <div> 立即购票</div>
+              <div> 立即购票></div>
     </div>
 </template>
 
@@ -32,7 +32,7 @@ methods:{
     padding: 1% 0;
     width: 96%;
     font-size: 12vw;
-    font-family: 'OPPOSans_B';
+    // font-family: 'OPPOSans_B';
 
   }
 }

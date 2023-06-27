@@ -16,13 +16,14 @@
         </div> 
         </div>
 
-
+          <div class="founder_logo">
+            <img src="../assets/logo1.png" alt="">
+          </div>
         <div style="
                 font-size: 3.8vw;
                 margin: 5% 0px;
             ">
             <span>Founder Park 是极客公园孵化的科技创业者社区，面向 AGI 时代里的优秀创业者，推动创新产品的诞生。通过对优秀创业者的筛选、运营和服务（知识服务、创新服务、投融资服务），促进优秀创业者之间的深度联结、认知流动和共同成长</span>
-            <br>
             <br>
             <br>
             <p>—— Founders Backing Founders。</p>
@@ -35,7 +36,9 @@
                 于 2023 年 3 月成立，我们通过高质量的认知分享和主题活动，集聚了超 3000 位致力在大模型相关领域创业的创业者、产品经理、研发工程师、对大模型技术和场景应用开发进展感兴趣的学者及投资人。群内会定期举办线上产品分享研讨会、组织跨群的资源交流和 AGI 国内活动信息交换。
             </span>
         </div>
-
+        <div class="founder_logo">
+            <img src="../assets/qys.png" alt="">
+          </div>
         <div class="shequ">
             <p>前沿社</p>
             <span>
@@ -43,6 +46,9 @@
             </span>
         </div>
 
+        <div class="founder_logo3">
+            <img src="../assets/rto.png" alt="">
+          </div>
         <div class="shequ">
             <p>Global Ready 社区</p>
             <span>
@@ -178,7 +184,7 @@
     },
     beforeRouteEnter(to,from,next){
       console.log('beforeRouteEnter');
-      window.document.body.style.background='#00FFCE'
+      window.document.body.style.background='#D9DADA'
       const LinnerWidth=window.innerWidth
         const big_box =document.querySelector('.box_bigbox')
       console.log(window.innerWidth,'window.innerWidth');
@@ -229,5 +235,22 @@
     }
     .blockStyle3{
       height: 84%;
+    }
+
+    .founder_logo{
+      width: 100%;
+      margin-top: 20%;
+      margin-bottom: 5%;
+      img{
+        width: 65%;
+      }
+    }
+    .founder_logo3{
+      width: 100%;
+      margin-top: 20%;
+      margin-bottom: 5%;
+      img{
+        width: 20%;
+      }
     }
     </style>

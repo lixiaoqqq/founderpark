@@ -137,7 +137,7 @@
              <h3 style="font-family:'OPPOSans_B';"> {{ agiText11 }}</h3>
            </div>
           <div class="videobottom"> 
-                      <video ref="video" class="videoStyle" webkit-playsinline="" playsinline="true" preload="none"  poster="../assets/4042.jpeg" x5-video-player-type="h5"    controls muted loop>
+                      <video ref="video" class="videoStyle" webkit-playsinline="" playsinline="true" preload="none"  poster="../assets/Group_shipin.png" x5-video-player-type="h5"    controls muted loop>
                         <source src="http://lc-RanMoNzS.cn-n1.lcfile.com/hOkSoOMf4yV9D3456Dzc8zyGgjOCgNbV/AI%20Quest%E6%A8%AA%E7%89%88_0625_x264.mp4" type="video/mp4">
                       </video>
                       <!-- <button @click="toggleFullScreen">
@@ -209,15 +209,17 @@
                             </div>
                             <div class="aig_show_btn">
                               <div   @click="chakan"  class="aig_show_btnck">
-                              查看嘉宾日程
+                              查看嘉宾日程>
                               </div>
                               <div  @click="goupiao" class="aig_show_btngp">
-                                  立即购票
+                                  立即购票>
                               </div>
 
                             </div>
 
-                            <div class="button_nav">
+                        
+                       </div>
+                       <div class="button_nav">
                               <h1 style="background: black; color: #595757;" @click="goTop">{{ this.showText1 }}</h1>
                               <!-- <h1  @click="gotorouter('SubForum')"> {{ this.showText2 }}</h1>  -->
                               <h1 @click="gotorouter('/GuestSharing')">       {{ this.showText3 }}</h1>
@@ -233,8 +235,43 @@
                         </div>  
                           </div>
                             </div>
-                       </div>
 
+                        <div class="Sponsor">
+                          <div>主办方</div>
+                          <div>
+                            <img  style="
+    width: 40%;
+" src="../assets/logo1.png" alt="">
+                          </div>
+                          <div>
+                            联合出品方
+                          </div>
+                          <div>
+                            <img  style="
+    width: 25%;
+" src="../assets/logo2.png" alt="">
+
+                          </div>
+                          <div>
+                            Demo Show 联合发起方
+                          </div>
+                          <div>
+                            <img  style="
+    width: 25%;
+"  src="../assets/logo3.png" alt="">
+
+                          </div>
+                          <div>
+                            战略合作伙伴
+                          </div>
+                          <div>
+                            <img style="
+    width: 100%;
+"  src="../assets/footerlogo111.jpeg" alt="">
+
+                          </div>
+
+                        </div>
                        <div class="footer_img">
                          <img src="../assets/foter.png" alt="">
                       </div>
@@ -404,33 +441,33 @@ export default {
     },
   methods: {
 
-    toggleFullScreen() {
-      const video = this.$refs.video;
+    // toggleFullScreen() {
+    //   const video = this.$refs.video;
       
 
-      console.log(video,'video');
-      if (video.requestFullscreen) {
-        video.requestFullscreen();
-      } else if (video.webkitRequestFullscreen) {
-        video.webkitRequestFullscreen();
-      } else if (video.mozRequestFullScreen) {
-        video.mozRequestFullScreen();
-      } else if (video.msRequestFullscreen) {
-        video.msRequestFullscreen();
-      }
-    },
-    exitFullScreen() {
-      if (!document.fullscreenElement) {
-        const video = this.$refs.video;
-        if (video.webkitExitFullscreen) {
-          video.webkitExitFullscreen();
-        } else if (video.mozCancelFullScreen) {
-          video.mozCancelFullScreen();
-        } else if (video.msExitFullscreen) {
-          video.msExitFullscreen();
-        }
-      }
-    },
+    //   console.log(video,'video');
+    //   if (video.requestFullscreen) {
+    //     video.requestFullscreen();
+    //   } else if (video.webkitRequestFullscreen) {
+    //     video.webkitRequestFullscreen();
+    //   } else if (video.mozRequestFullScreen) {
+    //     video.mozRequestFullScreen();
+    //   } else if (video.msRequestFullscreen) {
+    //     video.msRequestFullscreen();
+    //   }
+    // },
+    // exitFullScreen() {
+    //   if (!document.fullscreenElement) {
+    //     const video = this.$refs.video;
+    //     if (video.webkitExitFullscreen) {
+    //       video.webkitExitFullscreen();
+    //     } else if (video.mozCancelFullScreen) {
+    //       video.mozCancelFullScreen();
+    //     } else if (video.msExitFullscreen) {
+    //       video.msExitFullscreen();
+    //     }
+    //   }
+    // },
     showPopup() {
       this.shows = true;
     },
@@ -480,6 +517,8 @@ export default {
     gotorouter(routers) {
       console.log(routers,'routers');
       this.$router.push(routers);
+
+      
     },
     
     
@@ -542,15 +581,15 @@ if(scrollTop > 300){
 }
 if(scrollTop > 500){
       if(this.agiTexts12==''){
-            this.appear("大会亮点> ", "agiTexts12");
+            this.appear("大会亮点 ", "agiTexts12");
             this.appear(" AGI公开课 ", "agiTexts13");
-            this.appear("/Open Talk> ", "agiTexts14");
+            this.appear("/Open Talk ", "agiTexts14");
             this.appear("看当下 AGI 领域最具公信力、话语权、前瞻性的行业领袖", "agiTexts15");
             this.appear("与旗帜人物，", "agiTexts16");
             this.appear("从技术概念到应用落地，从技术变革到产品创新，", "agiTexts17");
             this.appear("深扒大模型技术的底层逻辑，起底新范式变革的底层思维。", "agiTexts18");
             this.appear("AGI 研讨工坊", "agiTexts19");
-            this.appear("/Workshop>", "agiTexts20");
+            this.appear("/Workshop", "agiTexts20");
             this.appear("与率先入场的技术行家、产品玩家和业务专家进行深入交流", "agiTexts26");
             this.appear("，", "agiTexts21");
             this.appear("从每个人都能用起来的产品实操，到每个组织都必须思考的", "agiTexts22");
@@ -565,13 +604,13 @@ if(scrollTop > 500){
 if(scrollTop > 800){
       if(this.agiTexts27==''){
             this.appear("创新小赛", "agiTexts32");
-            this.appear("/Demo Show>", "agiTexts27");
+            this.appear("/Demo Show", "agiTexts27");
             this.appear("与投资人、产业方、大模型技术专家和产品专家一起，", "agiTexts28");
             this.appear("看优秀早期大模型创业项目的创新路演，", "agiTexts29");
             this.appear("和他们面对面交流，让思想得到更新打磨，为创新带来更切", "agiTexts30");
             this.appear("实可行的灵感。", "agiTexts31");
             // this.appear("1份", "agiTexts33");
-            this.appear("AGI 创新力量全景图>", "agiTexts34");
+            this.appear("AGI 创新力量全景图", "agiTexts34");
             this.appear("基于 Founder Park 与一线投资人、社区技术专家的联合研", "agiTexts35");
             this.appear("现场发布完整的、当下 AGI 产业创新力量全景图，", "agiTexts36");
             this.appear("在描绘产业全貌的同时，帮助创新者们看到更多创新机遇。", "agiTexts37");
@@ -580,7 +619,7 @@ if(scrollTop > 800){
             this.appear("除此以外，现场还有 ", "agiTexts39");
 
             this.appear("AGI 体验区 ", "agiTexts40");
-            this.appear("/Play Zone>", "agiTexts41");
+            this.appear("/Play Zone", "agiTexts41");
             this.appear("全天候展示模型平台和技术解决方案，直接上手最新创新产", "agiTexts42");
             this.appear("品和工具，", "agiTexts43");
             this.appear("在这里，你可以和来自各领域的创新者们自由交流，", "agiTexts44");
@@ -761,9 +800,20 @@ if(scrollTop > 800){
     }
 }
 .button_nav {
+  background: #1E1E1E;
+    padding: 25% 3%;
   h1{
     margin-top: 1%;
   }
+}
+.Sponsor{
+  background: #FFFFFF;
+    text-align: left;
+    padding: 5% 3%;
+    div{
+      margin-top: 5%;
+    
+    }
 }
 
 
@@ -797,7 +847,7 @@ if(scrollTop > 800){
 }
 
   .footer_img{
-    margin-top: 60%;
+    // margin-top: 60%;
   }
 .warp_box{
   height: 2000px;
@@ -1073,6 +1123,7 @@ font-size: 60px!important;
     .videoStyle{
       width: 95%;
       background: black;
+      height: 600px;
     }
   }
    .hidePoster {

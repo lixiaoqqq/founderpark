@@ -20,7 +20,7 @@
 
 
         <div class="title_item">
-            <div class="title">关于购票></div>
+            <div class="title">关于购票</div>
             <div class="duihua_item">
                 <p>Q：购票什么时间截止？</p>
                 <span>A：根据票面可用日期，大会购票于 2023年7月22日-2023年7月23日陆续截止。</span>
@@ -34,7 +34,7 @@
 
         
         <div class="title_item">
-            <div class="title">关于入场></div>
+            <div class="title">关于入场</div>
             <div class="duihua_item">
                 <p>Q：现场如何签到？</p>
                 <span>A：票面可用日期当天，在活动现场凭购票后的票券二维码于签到处签到，并领取入场凭证。</span>
@@ -49,7 +49,7 @@
 
         
         <div class="title_item">
-            <div class="title">关于大会现场></div>
+            <div class="title">关于大会现场</div>
             <div class="duihua_item">
                 <p>Q：大会每日的时间安排是怎样的？</p>
                 <div class="duihua_item_child"> 

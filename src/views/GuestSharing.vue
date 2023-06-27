@@ -28,7 +28,7 @@
            </transition>
         </div>
 
-        <div style="
+        <!-- <div style="
     padding: 0 2%;
 " class="SubForum_Text_style">
         <h1>{{ showText8 }}</h1>
@@ -36,15 +36,15 @@
               <div class="blockStyle3" ></div>
              <div class="blockStyle4" ></div>
             </div>  
-        </div>
+        </div> -->
 
         <div class="Face_Design">
-              <img src="../assets/with.png" alt="">
-              <p>票品售出，除因不可抗力因素导致大会延期或取消，其他不支持退改</p>
+              <!-- <img src="../assets/with.png" alt=""> -->
+              <!-- <p>票品售出，除因不可抗力因素导致大会延期或取消，其他不支持退改</p> -->
 
               
               <div @click="goupiao" class="aig_show_btngp">
-                   立即购票
+                   立即购票>
               </div>
         </div>
 
