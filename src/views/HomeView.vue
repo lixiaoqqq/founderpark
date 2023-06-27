@@ -812,7 +812,7 @@ if(scrollTop > 800){
     color: #FFFFFF;
     width: fit-content;
     background: black;
-    font-size: 3.5vw;
+    font-size: 3.3vw;
     font-family: 'OPPOSans_R';
 
   }
