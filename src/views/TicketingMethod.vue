@@ -19,7 +19,7 @@
     </div>
       <div class="method">
         <div class="private_directors">
-       <img src="../assets/with.png" alt="">
+       <img src="../assets/zao1.jpg" alt="">
     </div>
     <div class="ticket_sales">
             <!-- <div class="ticket_sales_Txte">
@@ -35,7 +35,7 @@
     </div>
     <div class="method">
         <div class="private_directors">
-       <img src="../assets/with.png" alt="">
+          <img src="../assets/zao2.jpg" alt="">
     </div>
     <div class="ticket_sales">
             <!-- <div class="ticket_sales_Txte">
@@ -51,7 +51,8 @@
     </div>
     <div class="method">
         <div class="private_directors">
-       <img src="../assets/with.png" alt="">
+          <img src="../assets/zao3.jpg" alt="">
+
     </div>
     <div class="ticket_sales">
             <!-- <div class="ticket_sales_Txte">
@@ -153,7 +154,7 @@
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
       console.log(scrollTop,'scrollTop');
-      if(scrollTop > 678){
+      if(scrollTop > 600){
         if (this.agiTexts1 === "") {
         this.appear("首页>", "agiTexts1");
         this.appear("嘉宾 & 日程>", "agiTexts2");
@@ -231,7 +232,9 @@
       font-size: 11vw;
     }
   }
-
+.ticket_sales_button{
+  margin-top: 10%;
+}
   .blockStyle3{
     height: 84%;
   }

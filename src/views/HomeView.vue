@@ -248,7 +248,7 @@
                           </div>
                           <div>
                             <img  style="
-    width: 25%;
+    width: 18%;
 " src="../assets/logo2.png" alt="">
 
                           </div>
@@ -257,7 +257,7 @@
                           </div>
                           <div>
                             <img  style="
-    width: 25%;
+    width: 20%;
 "  src="../assets/logo3.png" alt="">
 
                           </div>
@@ -812,6 +812,7 @@ if(scrollTop > 800){
     padding: 5% 3%;
     div{
       margin-top: 5%;
+      font-size: 5vw;
     
     }
 }

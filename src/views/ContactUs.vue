@@ -17,12 +17,12 @@
     </div>
 
 <br><br><br>
-    <h2>大会交流群></h2>
+    <h2>大会交流群</h2>
     <br>
 
     <div class="Nopublic">
            <div class="nopublic_img">
-                <img src="../assets/group.png" alt="">
+                <img src="../assets/erweima.png" alt="">
             </div>
            <div class="nopublic_text">
               <p style="">及时获取票务优惠信息及大会筹备「 小道消息」</p>
@@ -38,7 +38,7 @@
     <br>
     <br>
     <div class="office_hour">
-      <h2>Founder Park官方微信></h2>
+      <h2>Founder Park官方微信</h2>
   </div>
   <div class="Nopublic">
             <div class="nopublic_img">
@@ -53,7 +53,7 @@
     <br>   <br>
     <br>
 
-    <h2 >大会合作邮箱></h2>
+    <h2 >大会合作邮箱</h2>
     <br>
     <br>
     <p style="

@@ -21,6 +21,7 @@
 }
 .Innovative_Power h3 {
   font-size: 8vw;
+  font-family: "OPPOSans_B";
   margin: 5% 0;
 }
 .Innovative_Power .power_span {
@@ -33,6 +34,7 @@
 .tablist > p {
   font-size: 8vw;
   font-family: "OPPOSans_B";
+  margin-top: 5%;
   margin: 5% 0;
   padding: 0 2%;
 }
