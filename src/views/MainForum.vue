@@ -135,12 +135,12 @@ methods:{
       if(scrollTop > 480){
         if (this.agiTexts1 === "") {
         this.appear("大会亮点>", "agiTexts1");
-        this.appear("嘉宾 & 日程>", "agiTexts2");
+        this.appear("活动日程>", "agiTexts2");
         this.appear("购票方式>", "agiTexts3");
         this.appear("常见问题> ", "agiTexts4");
         this.appear("联系我们> ", "agiTexts5");
-        this.appear("关于 Founder  ", "agiTexts6");
-        this.appear("Park>", "agiTexts7");
+        // this.appear("关于 Founder  ", "agiTexts6");
+        this.appear("关于我们>", "agiTexts7");
 
         clearInterval(this.Subforumtimess2)
 

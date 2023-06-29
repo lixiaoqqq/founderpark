@@ -226,7 +226,7 @@
 
 
     <h4 style="
-    margin-left: 2%;
+    margin-left: 4%;
 "  class="Demoshow_title">传导空间二层</h4>
         <div style="
                 border-bottom: none;
@@ -319,14 +319,14 @@
     
     <div style="
     border-top: none;
-    width: 94%;
+    width: 91%;
     margin: 0 auto;
 " class="tablist_itme_time">
           10:00-10:20AM
         </div>
 
     <h4 style="
-            margin-left: 2%;
+            margin-left: 4%;
             margin-bottom: 5%;
         " class="Demoshow_title">分享项目团队</h4>
 
@@ -423,7 +423,7 @@
         
     </div>
     <h4 style="
-          margin-left: 2%;
+          margin-left: 4%;
       " class="Demoshow_title">互动嘉宾</h4>
 
 <div class="hudong">
@@ -612,7 +612,7 @@ children:[
 
 .Demoshow_item{
   border-top: 1px solid #000;
-  margin: 0 2%;
+  margin: 0 4%;
   display: flex;
   font-size: 3.5vw;
   padding-top: 3%;
@@ -648,7 +648,7 @@ children:[
 }
 
 .hudong{
-  margin: 0 2%;
+  margin: 0 4%;
     border-bottom: 1px solid #000;
     padding-top: 3%;
     // padding-bottom: 5%;
@@ -658,7 +658,7 @@ children:[
 
 .guest_items {
 display: flex;
-padding: 6% 2%;
+padding: 6% 4%;
 
 .guest_items_right{
   margin-left: 30%;
@@ -713,7 +713,7 @@ padding: 6% 2%;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid ;
-  padding: 5% 2%;
+  padding: 5% 4%;
 }
 .tablist_itme_lists p::before {
     content: "";

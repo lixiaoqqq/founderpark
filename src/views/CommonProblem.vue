@@ -22,9 +22,9 @@
         <div class="title_item">
             <div class="title">关于购票</div>
             <div class="duihua_item">
-                <p>Q：购票什么时间截止？</p>
-                <span>A：根据票面可用日期，大会购票于 2023年7月22日-2023年7月23日陆续截止。</span>
-                <p>Q：可以换票或者退票吗？</p>
+                <p>Q：购票截止时间？</p>
+                <span>A：根据票面可用日期，大会购票于 2023 年 7 月 22 日至 2023 年 7 月 23 日陆续截止。</span>
+                <p>Q：可以换票或退票吗？</p>
                 <span>A：票品一经售出，除因不可抗力因素导致本次大会取消或延期，其它订单不支持无理由退换，请在购买时务必仔细核对订单信息。</span>
 
                 <p>Q：在活动行上购票付款成功后，如何获得参会凭证？</p>
@@ -43,7 +43,8 @@
                 <span>A：当天离场后可以凭入场凭证再次入场。购买两日票的用户，请妥善保存入场凭证，大会持续两日期间，可凭该入场凭证再次入场。</span>
 
                 <p>Q：会议现场是否需要对号入座? 会议中途离开，座位是否保留？</p>
-                <span>A：购票用户可按照现场指引在指定区域就坐，不确保坐席，如您中途离开会场，不确保继续有座位。</span>
+                <span>
+A：购票用户可按照现场指引在指定区域就坐，座位先到先得，如中途离开会场，不确保继续有座位。</span>
             </div>
         </div>
 
@@ -54,10 +55,16 @@
                 <p>Q：大会每日的时间安排是怎样的？</p>
                 <div class="duihua_item_child"> 
                     <p>A：</p>
-                    <p>场地名称：751D Park 传导空间</p>
+                    <p>07/22（六）10:00 - 19:00</p>
+                    <p>07/23（日）10:00 - 19:00</p>
+                </div>
+                <p>Q：大会会场在哪里? 如何抵达会场？</p>
+                <div class="duihua_item_child"> 
+                    <p>A：</p>
+                    <p>场地名称：751D·Park 传导空间</p>
                     <p>场地地址：北京市朝阳区北京时尚设计广场 A19</p>
-                    <p>自驾：751 D·Park 北京时尚设计广场内有停车位，院内停</p>
-                    <p>车位置有限，建议您尽量乘坐公共交通出行。</p>
+                    <p>自驾：751D·Park 北京时尚设计广场内有停车位。停车费 </p>
+                    <p>6 元 / 小时。</p>
                     <p>地铁：可乘坐 14 号线至望京南站，从 B1 口出站后，乘坐 </p>
                     <p>403 路公交车至北京电机总厂，下车步行 10 分钟左右即</p>
                     <p>可到达。</p>
@@ -66,9 +73,13 @@
                     <p>路、946 路、402 路至彩虹路站，下车步行 800 米左右</p>
                     <p>到达。</p>
                 </div>
+
+
+
+
                 <p>Q：大会场馆附近有就餐的地方吗？</p>
                 <span>
-                  A：附近有诸多中餐厅、西餐厅、港式餐厅等，价位不等，有多样选择。
+                  A：附近有诸多餐厅，可任意选择。
                 </span>
             </div>
         </div>
@@ -165,12 +176,12 @@
         if(scrollTop > 678){
           if (this.agiTexts1 === "") {
           this.appear("首页>", "agiTexts1");
-          this.appear("嘉宾 & 日程>", "agiTexts2");
+          this.appear("活动日程>", "agiTexts2");
           this.appear("购票方式>", "agiTexts3");
           this.appear("常见问题> ", "agiTexts4");
           this.appear("联系我们> ", "agiTexts5");
-          this.appear("关于 Founder  ", "agiTexts6");
-          this.appear("Park>", "agiTexts7");
+          // this.appear("关于 Founder  ", "agiTexts6");
+          this.appear("关于我们>", "agiTexts7");
   
   
           clearInterval(this.Subforumtimess2)
@@ -269,16 +280,16 @@
       .duihua_item{
           >p{
             font-family: 'OPPOSans_B';
-            font-size: 3.8vw;
+            font-size: 3.5vw;
             margin-top: 5%;
           }
           >span{
-            font-size: 3.8vw;
+            font-size: 3.5vw;
 
           }
           .duihua_item_child{
             p{
-              font-size: 3.8vw;
+              font-size: 3.5vw;
             }
           }
         }

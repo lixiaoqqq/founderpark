@@ -69,7 +69,7 @@
         
       </div >
         <div class="price_item_right">
-          <p>7 月 22 日 单日票</p>
+          <p>7 月 23 日 单日票</p>
           <p>7 月 10 日 恢复原价</p>
         </div>
     </div>
@@ -99,14 +99,14 @@
       
       <div class="price_item_left">
     
-        <p>¥349</p>
+        <p>¥549</p>
 
 
-        <span>¥499</span>
+        <span>¥799</span>
         
       </div >
         <div class="price_item_right">
-          <p>7 月 22 日 单日票</p>
+          <p>两日通享票</p>
           <p>7 月 10 日 恢复原价</p>
         </div>
     </div>
@@ -211,12 +211,12 @@
       if(scrollTop > 600){
         if (this.agiTexts1 === "") {
         this.appear("首页>", "agiTexts1");
-        this.appear("嘉宾 & 日程>", "agiTexts2");
+        this.appear("活动日程>", "agiTexts2");
         this.appear("购票方式>", "agiTexts3");
         this.appear("常见问题> ", "agiTexts4");
         this.appear("联系我们> ", "agiTexts5");
-        this.appear("关于 Founder  ", "agiTexts6");
-        this.appear("Park>", "agiTexts7");
+        // this.appear("关于 Founder  ", "agiTexts6");
+        this.appear("关于我们>", "agiTexts7");
 
 
         clearInterval(this.Subforumtimess2)

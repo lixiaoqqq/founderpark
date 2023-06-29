@@ -226,7 +226,7 @@
 
 
     <h4 style="
-    margin-left: 2%;
+    margin-left: 4%;
 "  class="Demoshow_title">传导空间二层</h4>
         <div style="
                 border-bottom: none;
@@ -312,20 +312,21 @@
     </div> -->
 
     </div>
+    <br>
     <p>
             AGI 创新小赛
     </p>
     
     <div style="
     border-top: none;
-    width: 94%;
+    width: 91%;
     margin: 0 auto;
 " class="tablist_itme_time">
           10:00-10:20AM
         </div>
 
     <h4 style="
-            margin-left: 2%;
+            margin-left: 4%;
             margin-bottom: 5%;
         " class="Demoshow_title">分享项目团队</h4>
 
@@ -334,10 +335,14 @@
             <p>出门问问</p>
         </div>
         <div class="Demoshow_item_word">
-                   <p>
+                  <div class="Demoshow_item_word_dian"></div>
+                  <div>
+
+                    <p>
                       来自于LLM技术变革,大家希望它去改变什么？如何降本有效并创造体验？
-                  </p>
+                     </p>
                   <span>项目介绍............</span>
+                  </div>
         </div>
         
     </div>
@@ -349,10 +354,14 @@
             <p>出门问问</p>
         </div>
         <div class="Demoshow_item_word">
-                   <p>
+                  <div class="Demoshow_item_word_dian"></div>
+                  <div>
+
+                    <p>
                       来自于LLM技术变革,大家希望它去改变什么？如何降本有效并创造体验？
-                  </p>
+                     </p>
                   <span>项目介绍............</span>
+                  </div>
         </div>
         
     </div>
@@ -363,10 +372,14 @@
             <p>出门问问</p>
         </div>
         <div class="Demoshow_item_word">
-                   <p>
+                  <div class="Demoshow_item_word_dian"></div>
+                  <div>
+
+                    <p>
                       来自于LLM技术变革,大家希望它去改变什么？如何降本有效并创造体验？
-                  </p>
+                     </p>
                   <span>项目介绍............</span>
+                  </div>
         </div>
 
         
@@ -378,10 +391,14 @@
             <p>出门问问</p>
         </div>
         <div class="Demoshow_item_word">
-                   <p>
+                  <div class="Demoshow_item_word_dian"></div>
+                  <div>
+
+                    <p>
                       来自于LLM技术变革,大家希望它去改变什么？如何降本有效并创造体验？
-                  </p>
+                     </p>
                   <span>项目介绍............</span>
+                  </div>
         </div>
 
         
@@ -393,16 +410,20 @@
             <p>出门问问</p>
         </div>
         <div class="Demoshow_item_word">
-                   <p>
+                  <div class="Demoshow_item_word_dian"></div>
+                  <div>
+
+                    <p>
                       来自于LLM技术变革,大家希望它去改变什么？如何降本有效并创造体验？
-                  </p>
+                     </p>
                   <span>项目介绍............</span>
+                  </div>
         </div>
 
         
     </div>
     <h4 style="
-          margin-left: 2%;
+          margin-left: 4%;
       " class="Demoshow_title">互动嘉宾</h4>
 
 <div class="hudong">
@@ -584,14 +605,14 @@ children:[
 <style lang="scss" scoped>
 
 .Demoshow_title{
-  font-size: 6vw;
+  font-size: 5.5vw;
   margin-top: 5%;
   font-family: 'OPPOSans_B';
 }
 
 .Demoshow_item{
   border-top: 1px solid #000;
-  margin: 0 2%;
+  margin: 0 4%;
   display: flex;
   font-size: 3.5vw;
   padding-top: 3%;
@@ -606,9 +627,9 @@ children:[
   //   list-style: disc;
   //   display: list-item; 
   // }
-  .Demoshow_item_word>p{
-    display: list-item; 
-  }
+  // .Demoshow_item_word>p{
+  //   display: list-item; 
+  // }
 //   .Demoshow_item_word>p::before {
 //     content: "";
 //     display: inline-block;
@@ -627,7 +648,7 @@ children:[
 }
 
 .hudong{
-  margin: 0 2%;
+  margin: 0 4%;
     border-bottom: 1px solid #000;
     padding-top: 3%;
     // padding-bottom: 5%;
@@ -637,7 +658,7 @@ children:[
 
 .guest_items {
 display: flex;
-padding: 6% 2%;
+padding: 6% 4%;
 
 .guest_items_right{
   margin-left: 30%;
@@ -660,6 +681,7 @@ padding: 6% 2%;
     border-radius: 50%;
     position: relative;
     top: -3px;
+    left: -2px;
 }
 
 .guest_items_left p::before {
@@ -671,6 +693,8 @@ padding: 6% 2%;
     border-radius: 50%;
     position: relative;
     top: -3px;
+    left: -2px;
+
 }
 
 .guest_items_right p::before {
@@ -682,12 +706,14 @@ padding: 6% 2%;
     border-radius: 50%;
     position: relative;
     top: -3px;
+    left: -2px;
+
 }
 .tablist_itme_lists{
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid ;
-  padding: 5% 2%;
+  padding: 5% 4%;
 }
 .tablist_itme_lists p::before {
     content: "";

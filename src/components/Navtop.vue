@@ -106,12 +106,12 @@
 
       this.appear("首页>", "showText1");
           // this.appear("分论坛>", "showText2");
-          this.appear("嘉宾 & 日程>", "showText3");
+          this.appear("活动日程>", "showText3");
           this.appear("购票方式>", "showText4");
           this.appear("常见问题>", "showText5");
           this.appear("联系我们>", "showText6");
-          this.appear("关于 Founder", "showText7");
-          this.appear("Park>", "showText8");
+          // this.appear("关于 Founder", "showText7");
+          this.appear("关于我们>", "showText8");
         clearInterval(this.Subforumtimess2)
         this.Subforumtimess2 = window.setTimeout(()=>{
           this.Intervaltimes2 =  window.setInterval(() => {

@@ -150,7 +150,7 @@ html,body,#app{
 
   }
   .SubForum_Text_style>h1{
-    font-size: 11vw;
+    font-size: 13vw;
     background: black;
     color: white;
     width: fit-content;
@@ -215,7 +215,7 @@ html,body,#app{
     background: black;
 }
 h1{
-        font-size: 11vw;
+        font-size: 13vw;
         color: white;
         width: -moz-fit-content;
         width: fit-content;
@@ -229,7 +229,7 @@ h1{
 
 .tablist_itme_time{
     background: white;
-    border-top: 1px solid;
+    // border-top: 1px solid;
     padding: 5px;
     font-size: 3.5vw;
     font-family: 'OPPOSans_B';

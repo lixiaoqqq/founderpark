@@ -16,7 +16,7 @@
       </div> 
       </div>
 
-      <span style="margin-top: 5%; font-size: 12px;">活动更新中,实际以现场为准</span>
+      <span style="margin-top: 5%; font-size: 12px;">活动更新中，实际出席以现场为准</span>
 
     </div>  
 
@@ -264,12 +264,12 @@
       if(scrollTop > 2000){
         if (this.agiTexts1 === "") {
         this.appear("首页>", "agiTexts1");
-        this.appear("嘉宾 & 日程>", "agiTexts2");
+        this.appear("活动日程>", "agiTexts2");
         this.appear("购票方式>", "agiTexts3");
         this.appear("常见问题> ", "agiTexts4");
         this.appear("联系我们> ", "agiTexts5");
-        this.appear("关于 Founder  ", "agiTexts6");
-        this.appear("Park>", "agiTexts7");
+        // this.appear("关于 Founder  ", "agiTexts6");
+        this.appear("关于我们>", "agiTexts7");
         this.appear("购票方式", "showText8");
         clearInterval(this.Subforumtimess2)
         this.Subforumtimess2 = window.setTimeout(()=>{
@@ -351,7 +351,7 @@
 
 .Face_Design{
   margin: 10% 0;
-  padding: 0 2%;
+  padding: 0 4%;
   // width: 100%;
   img{
     width: 100%;

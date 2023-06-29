@@ -28,7 +28,7 @@
         painting: {
           width: "550px",
           height: "876px",
-          background: require("../assets/未标题-1-05.png"),
+          background: require("../assets/huodonghaibao.jpg"),
           views: [
             {
               type: "image",

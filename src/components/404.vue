@@ -2,6 +2,16 @@
     <div class="warp_box">
         <div class="box_404">
             <!-- <img src="../assets/404页面背景.jpg" alt=""> -->
+
+          <div class="left">
+              <img src="../assets/404-切图-06.png" alt="">
+            </div>
+            <div class="left1">
+              <img src="../assets/404-切图-04.png" alt="">
+            </div>
+            <div class="left2">
+              <img src="../assets/404-切图-05.png" alt="">
+            </div>
             <div class="box_gif_img">
                 <img src="../assets/404页面动图.gif" alt="">
             </div>
@@ -72,8 +82,23 @@ background-size: auto;
 
     }
 }
+img{
+  width: 100%;
+  display: block;
+}
+.left{
+    width: 23%;
+    position: absolute;
+    right: 16%;
+    top: 64%;
+}
 
-
+.left2{
+  width: 30%;
+    position: absolute;
+    top: 73%;
+    left: 19%;
+}
 .bottom_button{
   display: none  !important;
 }
@@ -106,5 +131,10 @@ background-size: auto;
       }
   }
 
-
+.left1{
+    width: 18%;
+    position: absolute;
+    right: 19%;
+    top: 19%;
+}
 </style>

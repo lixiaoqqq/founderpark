@@ -209,7 +209,7 @@
                             </div> -->
                             <div class="aig_show_btn">
                               <div   @click="chakan"  class="aig_show_btnck">
-                              查看嘉宾日程>
+                              查看日程>
                               </div>
                               <div  @click="goupiao" class="aig_show_btngp">
                                   立即购票>
@@ -476,12 +476,12 @@ export default {
       this.shows = true;
       this.appear("首页>", "showText1");
           // this.appear("分论坛>", "showText2");
-          this.appear("嘉宾 & 日程>", "showText3");
+          this.appear("活动日程>", "showText3");
           this.appear("购票方式>", "showText4");
           this.appear("常见问题>", "showText5");
           this.appear("联系我们>", "showText6");
-          this.appear("关于 Founder", "showText7");
-          this.appear("Park>", "showText8");
+          // this.appear("关于 Founder", "showText7");
+          this.appear("关于我们>", "showText8");
     },
 
     myhome(){
@@ -573,8 +573,8 @@ if(scrollTop > 300){
   this.appear("拥有专业的垂直领域认知； ", "agiTexts11");
   this.appear(" 是一群具有 AI 原生创新思维（AI-Native）的创业者；", "agiText1");
   this.appear(" 身处于这样的技术新浪潮中", "agiText2");
-  this.appear(" 不错过它的最好方式，就是亲身去体验、去探索、去沉浸其", "agiText3");
-  this.appear("中", "agiText4");
+  this.appear(" 不错过它的最好方式，就是亲身去体验、去探索、去沉浸其中", "agiText3");
+  // this.appear("中", "agiText4");
   // this.appear(" ", "agiText5");
   // this.appear(" 不错过它的最好方式，就是亲身去体验、去探索、去沉浸其", "agiText6");
   // this.appear(" 就是亲身去体验、去探索、去沉浸其中。", "agiText7");
@@ -594,9 +594,9 @@ if(scrollTop > 300){
 if(scrollTop > 500){
       if(this.agiTexts12==''){
             this.appear("这里有......", "agiTexts12");
-            this.appear(" AGI公开课 ", "agiTexts13");
+            this.appear(" AGI 公开课 ", "agiTexts13");
             // this.appear("/Open Talk ", "agiTexts14");
-            this.appear("看当下AGI领域最具公信力、话语权、前瞻性的行业领袖 ", "agiTexts15");
+            this.appear("看当下 AGI 领域最具公信力、话语权、前瞻性的行业领袖 ", "agiTexts15");
             this.appear("与旗帜人物从技术概念到应用落地，从技术变革到产品创", "agiTexts16");
             this.appear("新，深扒大模型技术的底层逻辑，起底新范式变革的底层", "agiTexts17");
             this.appear("思维", "agiTexts18");
@@ -605,7 +605,7 @@ if(scrollTop > 500){
             this.appear("与率先入场的技术行家、产品玩家和业务专家进行深入交", "agiTexts26");
             this.appear("流，从每个人都能用起来的产品实操，到每个组织都必须", "agiTexts21");
             this.appear("思考的业务转型，全方位把握个体与组织如何丝滑迈入 ", "agiTexts22");
-            this.appear("AGI 时代的技巧与策略，", "agiTexts23");
+            this.appear("AGI 时代的技巧与策略", "agiTexts23");
             // this.appear("全方位把握个体与组织如何丝滑迈入 AGI 时代的的技巧与", "agiTexts24");
             // this.appear("策略。", "agiTexts25");
       }
@@ -615,7 +615,7 @@ if(scrollTop > 500){
 
 if(scrollTop > 800){
       if(this.agiTexts32==''){
-            this.appear("AGI创新小赛", "agiTexts32");
+            this.appear("AGI 创新小赛", "agiTexts32");
             // this.appear("/Demo Show", "agiTexts27");
             this.appear("与投资人、大模型技术专家和产品行家一起，看优秀早期大", "agiTexts28");
             this.appear("模型团队的创新路演，让思想得到更新和打磨，为创新带来", "agiTexts29");
@@ -657,12 +657,12 @@ if(scrollTop > 800){
         if (this.showText1 === "") {
           this.appear("首页>", "showText1");
           // this.appear("分论坛>", "showText2");
-          this.appear("嘉宾 & 日程>", "showText3");
+          this.appear("活动日程>", "showText3");
           this.appear("购票方式>", "showText4");
           this.appear("常见问题>", "showText5");
           this.appear("联系我们>", "showText6");
-          this.appear("关于 Founder", "showText7");
-          this.appear("Park>", "showText8");
+          // this.appear("关于 Founder", "showText7");
+          this.appear("关于我们>", "showText8");
         clearInterval(this.Subforumtimess2)
         this.Subforumtimess2 = window.setTimeout(()=>{
           this.Intervaltimes2 =  window.setInterval(() => {

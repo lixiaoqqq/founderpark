@@ -18,8 +18,6 @@
 
 <br><br><br>
     <h2>加入 AGI 交流群</h2>
-    <br>
-
     <div class="Nopublic">
            <div class="nopublic_img">
                 <img src="../assets/erweima.png" alt="">
@@ -40,14 +38,14 @@
     <br>
     <br>
     <div class="office_hour">
-      <h2>关注 Founder Park</h2>
+      <h2>关注 Founder Park 公众号</h2>
   </div>
   <div class="Nopublic">
             <div class="nopublic_img">
                 <img src="../assets/ZVWsxT.png" alt="">
             </div>
             <div class="nopublic_text">
-              <p style=" margin-bottom: 2%;">扫码关注公众号容</p>
+              <p style=" margin-bottom: 2%;">扫码关注公众号</p>
               <p style=" margin-bottom: 2%;">紧跟大模型时代浪潮</p>
               <p style=" margin-bottom: 2%;">不错过任何最新内容</p>
               <!-- <p style="margin-top: 10%;font-size: 3vw;">微信扫码关注公众号</p> -->
@@ -154,12 +152,12 @@
         if(scrollTop > 400){
           if (this.agiTexts1 === "") {
             this.appear("首页>", "agiTexts1");
-            this.appear("嘉宾 & 日程>", "agiTexts2");
+            this.appear("活动日程>", "agiTexts2");
             this.appear("购票方式>", "agiTexts3");
             this.appear("常见问题> ", "agiTexts4");
             this.appear("联系我们> ", "agiTexts5");
-            this.appear("关于 Founder  ", "agiTexts6");
-            this.appear("Park>", "agiTexts7");
+            // this.appear("关于 Founder  ", "agiTexts6");
+            this.appear("关于我们>", "agiTexts7");
           }
         }
    },
@@ -293,7 +291,7 @@
     }
   }
 h2{
-font-size: 12vw;
+font-size: 9vw;
 font-weight: 400;
 }
 
