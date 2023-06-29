@@ -52,7 +52,7 @@
     </div>
     <div class="method">
         <div class="private_directors">
-          <img src="../assets/7.22zao2.png" alt="">
+          <img src="../assets/7.22早2.png" alt="">
 
     </div>
     <div 
@@ -87,7 +87,7 @@
     </div>
     <div class="method">
         <div class="private_directors">
-          <img src="../assets/7.22zao3.png" alt="">
+          <img src="../assets/7.22早3.png" alt="">
 
 
     </div>
