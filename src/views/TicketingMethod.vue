@@ -19,7 +19,7 @@
     </div>
       <div class="method">
         <div class="private_directors">
-       <img src="../assets/zao1.jpg" alt="">
+       <img src="../assets/7.22zao1.png" alt="">
     </div>
 
     <div     class="rotate"></div>
@@ -52,7 +52,8 @@
     </div>
     <div class="method">
         <div class="private_directors">
-          <img src="../assets/zao2.jpg" alt="">
+          <img src="../assets/7.22zao2.png" alt="">
+
     </div>
     <div 
     class="rotate"
@@ -86,7 +87,8 @@
     </div>
     <div class="method">
         <div class="private_directors">
-          <img src="../assets/zao3.jpg" alt="">
+          <img src="../assets/7.22zao3.png" alt="">
+
 
     </div>
 
