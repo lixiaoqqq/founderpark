@@ -20,7 +20,13 @@
       }
     },
     mounted(){
-     
+
+      var bottom_button=document.querySelector('.bottom_button')
+    console.log(bottom_button,'bottom_button');
+    bottom_button.style.display='none'
+            // this.$nextTick=(()=>{
+        
+            // })
     },
     beforeRouteEnter(to,from,next){
       // window.document.body.style.background='rgb(246,246,246)'
@@ -38,7 +44,10 @@
 
 @media only screen and (max-width: 3500px) {
     .box_404{
-      background-image: url(http://lc-RanMoNzS.cn-n1.lcfile.com/c8tqRyYtkFPxQSeQDkVEQA1Px2KvsSpF/404%E9%A1%B5%E9%9D%A2300dpi.png);
+      background-image: url(http://lc-RanMoNzS.cn-n1.lcfile.com/c8tqRyYtkFPxQSeQDkVEQA1Px2KvsSpF/404%E9%A1%B5%E9%9D%A2300dpi.png)   ;
+      background-position: center;
+    background-size: auto;
+
     }
 }
 @media only screen and (max-width: 2200px) {
@@ -46,21 +55,28 @@
     width: 28%;
   }
     .box_404{
-      background-image: url(../assets/404页面150dpi.png);
+      background-image: url(../assets/404页面150dpi.png) ;
+      background-position: center;
+background-size: auto;
+
     }
 }
-
-
 @media only screen and (max-width: 1291px) {
   .warp_box .box_404 .box_gif_img{
     width: 28%;
   }
     .box_404{
-      background-image: url(../assets/404页面背景1.jpg);
+      background-image: url(../assets/404页面背景1.jpg)   ;
+      background-position: center;
+    background-size: auto;
+
     }
 }
 
 
+.bottom_button{
+  display: none  !important;
+}
     .warp_box{
       height: 100%;
       .box_404{
