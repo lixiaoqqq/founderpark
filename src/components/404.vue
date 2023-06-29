@@ -3,7 +3,7 @@
         <div class="box_404">
             <!-- <img src="../assets/404页面背景.jpg" alt=""> -->
 
-          <div class="left">
+          <!-- <div class="left">
               <img src="../assets/404-切图-06.png" alt="">
             </div>
             <div class="left1">
@@ -11,7 +11,7 @@
             </div>
             <div class="left2">
               <img src="../assets/404-切图-05.png" alt="">
-            </div>
+            </div> -->
             <div class="box_gif_img">
                 <img src="../assets/404页面动图.gif" alt="">
             </div>
