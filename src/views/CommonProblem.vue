@@ -257,8 +257,8 @@
     }
 
     .title_item{
-      width: 98%;
-      padding-left: 2%;
+      width: 94%;
+      padding-left: 4%;
       margin-top: 10%;
       .title{
         font-size: 8vw;
@@ -287,5 +287,10 @@
 
     .SubForum_Text{
       margin-top: 25%;
+      margin-left: 4%;
+    }
+
+    .toptext h1{
+      margin-left: 4%;
     }
     </style>

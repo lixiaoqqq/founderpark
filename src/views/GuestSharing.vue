@@ -16,7 +16,7 @@
       </div> 
       </div>
 
-      <span style="margin-top: 5%;">活动更新中,实际以现场为准</span>
+      <span style="margin-top: 5%; font-size: 12px;">活动更新中,实际以现场为准</span>
 
     </div>  
 
@@ -288,7 +288,7 @@
     console.log(this.guestlist,'guestlist');
     window.addEventListener('scroll', this.handleScroll, true);
     // this.appear("拟定 ", "SubforumText");
-    this.appear("嘉宾日程", "SubforumText1");
+    this.appear("活动日程", "SubforumText1");
     // this.appear("购票方式", "SubforumText3");
     clearInterval(this.Subforumtimess)
     clearInterval(this.Intervaltimes)
@@ -534,8 +534,22 @@
   //   }
   // }
 
+
+  .SubForum_Text {
+      margin-left: 4%;
+      h1{
+        font-size: 13vw;
+      }
+ }
   .blockSztyle2{
     height: 5%;
     background: black;
+  }
+
+  .toptext{
+    width: 97%;
+  }
+  .fixde_AGI{
+    width: 95%;
   }
   </style>

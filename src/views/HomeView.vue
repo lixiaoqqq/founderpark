@@ -1,12 +1,7 @@
 
 <template>
   <div class="box_bigbox">
-              <!--这个为弹框黑色半透明背景-->
-              <div @click="hidePosters" :class="{hidePoster:showPoster} "></div>
-                        <!--这个为弹出的海报组件 第一种方式-->
-         <!-- <invite-poster v-show="showPoster" @hideposter="hidePosters"></invite-poster> -->
-                        <!--这个为弹出的海报组件 第二种方式-->
-          <invite-poster v-show="showPoster" @hideposter="hidePosters"></invite-poster>
+        
 
   <div class="warp_box">
                 <div class="warp">
@@ -285,7 +280,7 @@
             </div>
 
 
-         <div class="bottom_button">
+         <!-- <div class="bottom_button">
           
                            <div style="
                                   border-radius: 50%;
@@ -312,11 +307,13 @@
                            >
                               <p>个人</p>
                               <p>中心</p>
-                            </div>
+                            </div> 
                             <div>
                             </div>
-                         </div>
-                         
+        </div>
+                          -->
+
+
                   </div>
                   
   </template>
@@ -326,6 +323,7 @@ import { Toast } from 'vant';
 import MobileDetect from 'mobile-detect';
 import InvitePoster from "../components/Invite_poster.vue";
 import Errors from "../components/404.vue";
+import Buttons from "../components/Button.vue";
 Vue.use(Toast);
 export default {
   data() {
@@ -431,6 +429,7 @@ export default {
   components: {
       InvitePoster,
       Errors,
+      Buttons,
     },
   computed: {
     blockStyle() {

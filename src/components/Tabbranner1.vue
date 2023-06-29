@@ -312,6 +312,7 @@
     </div> -->
 
     </div>
+    <br>
     <p>
             AGI 创新小赛
     </p>
@@ -334,10 +335,14 @@
             <p>出门问问</p>
         </div>
         <div class="Demoshow_item_word">
-                   <p>
+                  <div class="Demoshow_item_word_dian"></div>
+                  <div>
+
+                    <p>
                       来自于LLM技术变革,大家希望它去改变什么？如何降本有效并创造体验？
-                  </p>
+                     </p>
                   <span>项目介绍............</span>
+                  </div>
         </div>
         
     </div>
@@ -349,10 +354,14 @@
             <p>出门问问</p>
         </div>
         <div class="Demoshow_item_word">
-                   <p>
+                  <div class="Demoshow_item_word_dian"></div>
+                  <div>
+
+                    <p>
                       来自于LLM技术变革,大家希望它去改变什么？如何降本有效并创造体验？
-                  </p>
+                     </p>
                   <span>项目介绍............</span>
+                  </div>
         </div>
         
     </div>
@@ -363,10 +372,14 @@
             <p>出门问问</p>
         </div>
         <div class="Demoshow_item_word">
-                   <p>
+                  <div class="Demoshow_item_word_dian"></div>
+                  <div>
+
+                    <p>
                       来自于LLM技术变革,大家希望它去改变什么？如何降本有效并创造体验？
-                  </p>
+                     </p>
                   <span>项目介绍............</span>
+                  </div>
         </div>
 
         
@@ -378,10 +391,14 @@
             <p>出门问问</p>
         </div>
         <div class="Demoshow_item_word">
-                   <p>
+                  <div class="Demoshow_item_word_dian"></div>
+                  <div>
+
+                    <p>
                       来自于LLM技术变革,大家希望它去改变什么？如何降本有效并创造体验？
-                  </p>
+                     </p>
                   <span>项目介绍............</span>
+                  </div>
         </div>
 
         
@@ -393,10 +410,14 @@
             <p>出门问问</p>
         </div>
         <div class="Demoshow_item_word">
-                   <p>
+                  <div class="Demoshow_item_word_dian"></div>
+                  <div>
+
+                    <p>
                       来自于LLM技术变革,大家希望它去改变什么？如何降本有效并创造体验？
-                  </p>
+                     </p>
                   <span>项目介绍............</span>
+                  </div>
         </div>
 
         
@@ -584,7 +605,7 @@ children:[
 <style lang="scss" scoped>
 
 .Demoshow_title{
-  font-size: 6vw;
+  font-size: 5.5vw;
   margin-top: 5%;
   font-family: 'OPPOSans_B';
 }
@@ -606,9 +627,9 @@ children:[
   //   list-style: disc;
   //   display: list-item; 
   // }
-  .Demoshow_item_word>p{
-    display: list-item; 
-  }
+  // .Demoshow_item_word>p{
+  //   display: list-item; 
+  // }
 //   .Demoshow_item_word>p::before {
 //     content: "";
 //     display: inline-block;

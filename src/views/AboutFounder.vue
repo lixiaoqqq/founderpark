@@ -23,10 +23,10 @@
                 font-size: 3.8vw;
                 margin: 5% 0px;
             ">
-            <span>Founder Park 是极客公园孵化的科技创业者社区，面向 AGI 时代里的优秀创业者，推动创新产品的诞生。通过对优秀创业者的筛选、运营和服务（知识服务、创新服务、投融资服务），促进优秀创业者之间的深度联结、认知流动和共同成长</span>
+            <span>Founder Park 是极客公园孵化的科技创业者社区，面向 AGI 时代里的优秀创业者，推动创新产品的诞生。通过对优秀创业者的筛选、运营和服务（知识服务、创新服务、投融资服务），促进优秀创业者之间的深度联结、认知流动和共同成长—— Founders Backing Founders。</span>
             <br>
             <br>
-            <p>—— Founders Backing Founders。</p>
+            <!-- <p></p> -->
         </div>
 
 
@@ -226,11 +226,13 @@
         // margin: 10% 0px;
         p{
             font-size: 12vw;
-            margin: 5% 0px;
+            // margin: 5% 0px;
+            margin-bottom: 5%;
+            margin-top: 2%;
             font-family: 'OPPOSans_B';
         }
         span{
-            font-size: 4.3vw;
+            font-size: 3.8vw;
         }
     }
     .blockStyle3{
@@ -240,9 +242,16 @@
     .founder_logo{
       width: 100%;
       margin-top: 20%;
-      margin-bottom: 5%;
+      // margin-bottom: 5%;
       img{
         width: 65%;
+      }
+    }
+
+    .SubForum_Text {
+      margin-left: 4%;
+      h1{
+        font-size: 13vw;
       }
     }
     .founder_logo3{
@@ -252,5 +261,15 @@
       img{
         width: 20%;
       }
+    }
+
+    .toptext{
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      width: 94%;
+      margin-top: 30px;
+      padding-left: 4%;
+      padding-right: 4%;
     }
     </style>

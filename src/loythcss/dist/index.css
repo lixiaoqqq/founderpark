@@ -46,12 +46,12 @@
 
 .tablist_itme_list {
   display: flex;
-  padding: 10px 0;
+  padding: 20px 0;
   justify-content: space-between;
 }
 
 .tablist_itme_list_ms {
-  width: 50%;
+  width: 56%;
 }
 .tablist_itme_list_ms > p {
   width: 93%;
@@ -82,6 +82,21 @@
 .tablist_itme_list_wz > ul > li {
   font-size: 3vw;
   list-style: disc;
+}
+
+.Demoshow_item_word {
+  display: flex;
+}
+
+.Demoshow_item_word .Demoshow_item_word_dian::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: -3px;
 }
 
 .tablist_itme_list_wz > p::before {
@@ -142,7 +157,7 @@
 }
 
 .subform_maim {
-  width: 96%;
+  width: 97%;
 }
 
 .ul_list {
@@ -159,7 +174,7 @@
   display: flex;
   flex-direction: column;
   margin-left: auto;
-  width: 98%;
+  width: 100%;
   margin-top: 30px;
 }
 .toptext .toptext_left {

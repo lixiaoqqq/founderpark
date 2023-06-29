@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <nav>
+      
+      <buttons/>
       <!-- <router-link to="/">Home</router-link> | -->
       <!-- <router-link to="/about">About</router-link> -->
       <!-- <div  class="top_fixed" v-if="BoxFixeds" >
@@ -30,8 +32,11 @@
 
 <script>
 // import BufferAnimation from 'vue-scroll-buffer'
-  
+import Buttons from "./components/Button.vue";
   export default {
+    components: {
+      Buttons,
+    },
   data() {
     return {
       property: 'value',
@@ -128,12 +133,11 @@ html,body,#app{
   }
 }
 .SubForum_Text{
-  margin-left: 2%;
   margin-top: 10%;
   margin-bottom: 20%;
 }
 .SubForum_Text>h1{
-  font-size: 11vw;
+  font-size: 13vw;
     background: black;
     color: white;
     width: fit-content;
@@ -227,7 +231,7 @@ h1{
     background: white;
     border-top: 1px solid;
     padding: 5px;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-family: 'OPPOSans_B';
   }
   h1,h3,h4,h5{

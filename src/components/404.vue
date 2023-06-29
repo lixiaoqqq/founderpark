@@ -1,21 +1,13 @@
 <template>
     <div class="warp_box">
-        <div class="box">
-    
-          <div class="box_left">
-               <p>找不到页面了哦,请使用手机端访问网站!</p>
-               <div class="box_left_img">
-                  <img src="../assets/ZVWsxT.png" alt="">
-               </div>
-               <p style="
-        text-align: center;">
-                请使用手机扫码访问网站
-               </p>
-    
-          </div>
-        <div class="box_right">
-             <img src="../assets/404.png" alt="">
-        </div>
+        <div class="box_404">
+            <!-- <img src="../assets/404页面背景.jpg" alt=""> -->
+            <div class="box_gif_img">
+                <img src="../assets/404页面动图.gif" alt="">
+            </div>
+            <div class="box_img">
+                <img src="../assets/pc_erweima.jpg" alt="">
+            </div>
         </div>
     </div>  
     </template>
@@ -45,33 +37,36 @@
     <style lang="scss" scoped>
     .warp_box{
       height: 100%;
-    }
-      .box{
-        display: flex;
-        align-items: center;
+      .box_404{
+        background-image: url(../assets/404页面150dpi.png);
+        background-size: 100% 100%;
         height: 100%;
-        justify-content: center;
-        width: 50%;
-        margin: 0 auto;
-        .box_left{
-
-          .box_left_img{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          margin-top: 10%;
-          }
-          // width: 50%;
-          p{
-            font-size: 1vw;
-            text-align: center;
+        .box_img{
+         width: 10%;
+         position: absolute;
+         top: 30%;
+         left: 71%;
+          img{
+            width: 100%;
+            display: block;
+          
           }
         }
-        .box_right{
-          width: 40%;
+        .box_gif_img{
+          width: 30%;
+          position: absolute;
+          top: 20%;
+          left: 19%;
           img{
             width: 100%;
           }
         }
       }
-    </style>
+  }
+
+//   @media only screen and (min-width: 1920px) {
+
+
+
+// }
+</style>
