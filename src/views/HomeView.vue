@@ -140,7 +140,7 @@
              <h3 style="font-family:'OPPOSans_B';"> {{ agiText11 }}</h3> -->
            </div>
           <div class="videobottom"> 
-                      <video ref="video" class="videoStyle" webkit-playsinline="" playsinline="true" preload="none"  poster="../assets/Group_shipin.png" x5-video-player-type="h5"    controls muted loop>
+                      <video ref="video" class="videoStyle" webkit-playsinline="" playsinline="true" preload="none"  poster="../assets/Group_shipin.png" x5-video-player-type="h5"    controls  loop>
                         <source src="http://lc-RanMoNzS.cn-n1.lcfile.com/hOkSoOMf4yV9D3456Dzc8zyGgjOCgNbV/AI%20Quest%E6%A8%AA%E7%89%88_0625_x264.mp4" type="video/mp4">
                       </video>
                       <!-- <button @click="toggleFullScreen">

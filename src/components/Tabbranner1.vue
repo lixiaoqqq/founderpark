@@ -660,6 +660,7 @@ padding: 6% 2%;
     border-radius: 50%;
     position: relative;
     top: -3px;
+    left: -2px;
 }
 
 .guest_items_left p::before {
@@ -671,6 +672,8 @@ padding: 6% 2%;
     border-radius: 50%;
     position: relative;
     top: -3px;
+    left: -2px;
+
 }
 
 .guest_items_right p::before {
@@ -682,6 +685,8 @@ padding: 6% 2%;
     border-radius: 50%;
     position: relative;
     top: -3px;
+    left: -2px;
+
 }
 .tablist_itme_lists{
   display: flex;

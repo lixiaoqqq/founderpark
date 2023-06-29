@@ -174,7 +174,7 @@
 font-size: 60px!important;
 }
 .fixde_AGI{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
