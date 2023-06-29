@@ -220,6 +220,7 @@ h1{
         margin-bottom: 1%;
         font-family: 'OPPOSans_R';
         line-height: 15.3vw;
+        font-weight: 400;
       }
 
 .tablist_itme_time{
@@ -228,6 +229,8 @@ h1{
     padding: 5px;
     font-size: 4vw;
     font-family: 'OPPOSans_B';
-
+  }
+  h1,h3,h4,h5{
+    font-weight: 400;
   }
 </style>

@@ -75,7 +75,7 @@
   </div>
  </div>
  <div class="footer_img">
-      <img src="../assets/foter.png" alt="">
+  <img src="../assets/footerimg.png" alt="">
      </div>
 </div>
 </template>
@@ -229,7 +229,6 @@ beforeDestroy(){
   word-break: break-word;
   width: 95%;
   margin-left: auto;
-  font-weight: 800;
 
 
   li{
@@ -262,7 +261,6 @@ beforeDestroy(){
   .ticket_sales_Txte{
     display: flex;
     flex-direction: column;
-  font-weight: 800;
   }
   .ticket_sales_button{
     background: white;

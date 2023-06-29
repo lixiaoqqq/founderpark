@@ -9,18 +9,32 @@
         <h1>{{ SubforumText }}</h1> 
       </div>
       <div class="toptext_right">
-      <h1>{{ SubforumText1 }}</h1> 
+      <h1>{{ SubforumText1 }}</h1>
       <div v-if="Subforum" class="style_Box">
          <div class="blockStyle1" ></div>
         <div class="blockSztyle2" ></div>
       </div> 
       </div>
+
+      <span style="margin-top: 5%;">活动更新中,实际以现场为准</span>
+
     </div>  
 
 
         <div class="guestlist">
             <div class="timeTab">
-                <div @click="tabclick(index)" :class="curindex==index?'actives':''"  v-for="(item,index) in guestlist" :key="index"> {{ item.datatime }}</div>
+                <div @click="tabclick(index)" :class="curindex==index?'actives':''"  v-for="(item,index) in guestlist" :key="index">
+              
+                  <div>
+                    {{ item.datatime }}
+                  </div>
+                  <div style="
+                      font-size: 6vw;
+                  ">{{item.weeks}}</div>
+                  
+                
+                
+                </div>
             </div>
 
             <transition mode="out-in">
@@ -83,7 +97,7 @@
     </div>
    </div>
    <div class="footer_img">
-      <img src="../assets/foter.png" alt="">
+    <img src="../assets/footerimg.png" alt="">
      </div>
   </div>
   
@@ -109,7 +123,8 @@
     currentView:"Tab1",
     guestlist:[
       {
-          datatime:"7月22日",
+          datatime:"7/22",
+          weeks:"（六）",
           children:[
             {
               titlename:'Open Talk',
@@ -149,7 +164,9 @@
           ]
       },
       {
-          datatime:"7月23日",
+          datatime:"7/23",
+          weeks:"（日）",
+
           children:[
             {
               titlename:'Open Talk',
@@ -270,8 +287,8 @@
 
     console.log(this.guestlist,'guestlist');
     window.addEventListener('scroll', this.handleScroll, true);
-    this.appear("拟定 ", "SubforumText");
-    this.appear("嘉宾日程：", "SubforumText1");
+    // this.appear("拟定 ", "SubforumText");
+    this.appear("嘉宾日程", "SubforumText1");
     // this.appear("购票方式", "SubforumText3");
     clearInterval(this.Subforumtimess)
     clearInterval(this.Intervaltimes)
@@ -350,13 +367,14 @@
     font-size: 12vw;
     color:  #595757;
     margin: 10% 0;
-div{
+>div{
   font-family: 'OPPOSans_R';
   background: linear-gradient(to right,#000,#000) no-repeat right bottom;
   // background: linear-gradient(to right,#ec695c,#61c454) no-repeat right bottom;
 
         background-size: 0px 2px;
         transition:background-size 800ms;
+        display: flex;
 }
   }
 
@@ -390,9 +408,7 @@ div{
     }
   }
 
-  .tablist_itme_list_wz{
-    width: 25%
-  }
+
   .tablist_itme_list_wz>p{
        font-size: 3vw;
   }

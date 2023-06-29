@@ -96,11 +96,13 @@
      
             <div class="warp_bottom_img_two">
                       <div class="img_logo_two">
-                        <p>北京 751D·PARK</p>
                         <p style="
-                          font-size: 6vw;
+                          font-size: 9vw;
                       ">07/22-07/23</p>
+                    <p>北京 751D·PARK 传导空间</p>
+
                      </div>
+                     
                      
             </div>
 
@@ -109,13 +111,13 @@
   
           
            <div class="agiText">
-             <h3> {{ agiTexts1 }}</h3>
+             <!-- <h3> {{ agiTexts1 }}</h3>
              <h3> {{ agiTexts2}}</h3>
              <h3> {{ agiTexts3 }}</h3>
              <h3> {{ agiTexts4 }}</h3>
              <h3> {{ agiTexts5 }}</h3>
              <h3> {{ agiTexts6 }}</h3>
-             <br><br>
+             <br><br> -->
              <h3> {{ agiTexts7 }}</h3>
              <h3> {{ agiTexts }}</h3>
              <h3> {{ agiTexts8 }}</h3>
@@ -123,18 +125,19 @@
              <h3> {{ agiTexts10 }}</h3>
              <h3> {{ agiTexts11 }}</h3>
              <h3> {{ agiText1 }}</h3>
-             <h3> {{ agiText2 }}</h3>
-             <h3> {{ agiText3 }}</h3>
-             <h3> {{ agiText4 }}</h3>
-             <br><br>
-             <h3> {{ agiText5 }}</h3>
+             <br>
+             <h3 style="font-family:'OPPOSans_B'; color: #D3FF19;"> {{ agiText2 }}</h3>
+             <h3 style="font-family:'OPPOSans_B'; color: #D3FF19;"> {{ agiText3 }}</h3>
+             <h3 style="font-family:'OPPOSans_B'; color: #D3FF19;"> {{ agiText4 }}</h3>
+             <br>
+             <!-- <h3> {{ agiText5 }}</h3>
              <h3> {{ agiText6 }}</h3> 
-             <h3> {{ agiText7 }}</h3>
-             <br><br>
-             <h3 style="font-family:'OPPOSans_B';"> {{ agiText8 }}</h3>
-             <h3 style="font-family:'OPPOSans_B';"> {{ agiText9 }}</h3>
-             <h3 style="font-family:'OPPOSans_B';"> {{ agiText10 }}</h3>
-             <h3 style="font-family:'OPPOSans_B';"> {{ agiText11 }}</h3>
+             <h3> {{ agiText7 }}</h3> -->
+             <!-- <br><br> -->
+             <h3 style="font-family:'OPPOSans_B'; color: #D3FF19;"> {{ agiText8 }}</h3>
+             <h3 style="font-family:'OPPOSans_B'; color: #D3FF19;"> {{ agiText9 }}</h3>
+             <!-- <h3 style="font-family:'OPPOSans_B';"> {{ agiText10 }}</h3>
+             <h3 style="font-family:'OPPOSans_B';"> {{ agiText11 }}</h3> -->
            </div>
           <div class="videobottom"> 
                       <video ref="video" class="videoStyle" webkit-playsinline="" playsinline="true" preload="none"  poster="../assets/Group_shipin.png" x5-video-player-type="h5"    controls muted loop>
@@ -147,36 +150,38 @@
                       </button> -->
 
                       <div class="agi_shwo">
-                        <h1> {{ agiTexts12 }}</h1><br>
-                        <br>
-                            <div class="agi_shwo_item">
+                        <h1> {{ agiTexts12 }}</h1>
+                            <div style="
+                                  margin-top: 15%;
+                              " class="agi_shwo_item">
                               <h2>{{ agiTexts13 }} </h2>
-                              <h2>{{ agiTexts14 }}</h2>
+                              <!-- <h2>{{ agiTexts14 }}</h2> -->
                                   <br>
                               <p>{{ agiTexts15 }}</p>
                               <p>{{ agiTexts16 }}</p>
                               <p>{{ agiTexts17 }}</p>
                               <p>{{ agiTexts18 }}</p>
+                              <!-- <p>{{ agiTexts14 }}</p> -->
                             </div>
                             <div class="agi_shwo_item">
                               <h2>{{ agiTexts19 }} </h2>
-                              <h2>{{ agiTexts20 }}</h2>
+                              <!-- <h2>{{ agiTexts20 }}</h2> -->
                                   <br>
                               <p>{{ agiTexts26 }}</p>
                               <p>{{ agiTexts21 }}</p>
                               <p>{{ agiTexts22 }}</p>
                               <p>{{ agiTexts23 }}</p>
-                              <p>{{ agiTexts24 }}</p>
-                              <p>{{ agiTexts25 }}</p>
+                              <!-- <p>{{ agiTexts24 }}</p>
+                              <p>{{ agiTexts25 }}</p> -->
                             </div>
                             <div class="agi_shwo_item">
                               <h2>{{ agiTexts32 }} </h2>
-                              <h2>{{ agiTexts27 }}</h2>
+                              <!-- <h2>{{ agiTexts27 }}</h2> -->
                                   <br>
                               <p>{{ agiTexts28 }}</p>
                               <p>{{ agiTexts29 }}</p>
                               <p>{{ agiTexts30 }}</p>
-                              <p>{{ agiTexts31 }}</p>
+                              <!-- <p>{{ agiTexts31 }}</p> -->
                             </div>
                             <div class="agi_shwo_item">
                               <!-- <h2>{{ agiTexts33 }} </h2> -->
@@ -197,7 +202,7 @@
                               <p>{{ agiTexts17 }}</p>
                               <p>{{ agiTexts18 }}</p>
                             </div>
-                            <div class="agi_shwo_item">
+                            <!-- <div class="agi_shwo_item">
                               <h2>{{ agiTexts39 }} </h2>
                               <h2>{{ agiTexts40 }}</h2>
                               <h2>{{ agiTexts41 }}</h2>
@@ -206,7 +211,7 @@
                               <p>{{ agiTexts43 }}</p>
                               <p>{{ agiTexts44 }}</p>
                               <p>{{ agiTexts45 }}</p>
-                            </div>
+                            </div> -->
                             <div class="aig_show_btn">
                               <div   @click="chakan"  class="aig_show_btnck">
                               查看嘉宾日程>
@@ -273,7 +278,7 @@
 
                         </div>
                        <div class="footer_img">
-                         <img src="../assets/foter.png" alt="">
+                         <img src="../assets/footerimg.png" alt="">
                       </div>
                  
                 </div>
@@ -555,29 +560,29 @@ export default {
     handleScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 if(scrollTop > 300){
-  if (this.agiTexts1 === "") {
-  this.appear(" Playground 概念来源 ——", "agiTexts1");
-  this.appear("在许多 AI 产品中，大家常会用 PLAYGROUND 来去指代一", "agiTexts2");
-  this.appear("个开发或体验环境，能够让开发者、申请用户进行模型的简 ", "agiTexts3");
-  this.appear("单搭建、产品功能和用户案例的体验等，比如 OpenAI . ", "agiTexts4");
-  this.appear("Playground，Cohere Playground，NVIDIA AI Play- ", "agiTexts5");
-  this.appear("ground …", "agiTexts6");
+  if (this.agiTexts7=== "") {
+  // this.appear(" Playground 概念来源 ——", "agiTexts1");
+  // this.appear("在许多 AI 产品中，大家常会用 PLAYGROUND 来去指代一", "agiTexts2");
+  // this.appear("个开发或体验环境，能够让开发者、申请用户进行模型的简 ", "agiTexts3");
+  // this.appear("单搭建、产品功能和用户案例的体验等，比如 OpenAI . ", "agiTexts4");
+  // this.appear("Playground，Cohere Playground，NVIDIA AI Play- ", "agiTexts5");
+  // this.appear("ground …", "agiTexts6");
   this.appear("随着技术的不断变革，全新的 AGI 浪潮正席卷而来 ", "agiTexts7");
-  this.appear("。", "agiTexts");
-  this.appear("我们已经看到在这波浪潮中，聚集着一批属于 AGI ", "agiTexts8");
-  this.appear("时代的 Doers，他们 ——  ", "agiTexts10");
-  this.appear("对 AGI 时代的新变化充满着求知和好奇； ", "agiTexts11");
-  this.appear(" 拥有专业的垂直领域认知；", "agiText1");
-  this.appear(" 有改造世界的意愿；", "agiText2");
-  this.appear(" 是一群具有 AI 原生创新思维（AI-Native）的创业", "agiText3");
-  this.appear(" 者。", "agiText4");
-  this.appear(" 身处于这样的技术新浪潮中，", "agiText5");
-  this.appear(" 不错过它的最好方式，", "agiText6");
-  this.appear(" 就是亲身去体验、去探索、去沉浸其中。", "agiText7");
+  this.appear("我们看到在这波浪潮中，聚集着一批属于 AGI 时代的 Doers", "agiTexts");
+  this.appear("他们 —— ", "agiTexts8");
+  this.appear("对 AGI 时代的新变化充满着求知和好奇 ", "agiTexts10");
+  this.appear("拥有专业的垂直领域认知； ", "agiTexts11");
+  this.appear(" 是一群具有 AI 原生创新思维（AI-Native）的创业者；", "agiText1");
+  this.appear(" 身处于这样的技术新浪潮中", "agiText2");
+  this.appear(" 不错过它的最好方式，就是亲身去体验、去探索、去沉浸其", "agiText3");
+  this.appear("中", "agiText4");
+  // this.appear(" ", "agiText5");
+  // this.appear(" 不错过它的最好方式，就是亲身去体验、去探索、去沉浸其", "agiText6");
+  // this.appear(" 就是亲身去体验、去探索、去沉浸其中。", "agiText7");
   this.appear(" AGI Playground ", "agiText8");
-  this.appear(" - ", "agiText9");
-  this.appear(" 让我们与 AGI 行动者们在这里聚集、探索和相互启", "agiText10");
-  this.appear(" 发。", "agiText11");
+  this.appear(" 与 AGI 行动者们在这里聚集、探索和相互启发 ", "agiText9");
+  // this.appear(" 让我们与 AGI 行动者们在这里聚集、探索和相互启", "agiText10");
+  // this.appear(" 发。", "agiText11");
 
   
 
@@ -589,49 +594,49 @@ if(scrollTop > 300){
 }
 if(scrollTop > 500){
       if(this.agiTexts12==''){
-            this.appear("大会亮点 ", "agiTexts12");
+            this.appear("这里有......", "agiTexts12");
             this.appear(" AGI公开课 ", "agiTexts13");
-            this.appear("/Open Talk ", "agiTexts14");
-            this.appear("看当下 AGI 领域最具公信力、话语权、前瞻性的行业领袖", "agiTexts15");
-            this.appear("与旗帜人物，", "agiTexts16");
-            this.appear("从技术概念到应用落地，从技术变革到产品创新，", "agiTexts17");
-            this.appear("深扒大模型技术的底层逻辑，起底新范式变革的底层思维。", "agiTexts18");
+            // this.appear("/Open Talk ", "agiTexts14");
+            this.appear("看当下AGI领域最具公信力、话语权、前瞻性的行业领袖 ", "agiTexts15");
+            this.appear("与旗帜人物从技术概念到应用落地，从技术变革到产品创", "agiTexts16");
+            this.appear("新，深扒大模型技术的底层逻辑，起底新范式变革的底层", "agiTexts17");
+            this.appear("思维", "agiTexts18");
             this.appear("AGI 研讨工坊", "agiTexts19");
-            this.appear("/Workshop", "agiTexts20");
-            this.appear("与率先入场的技术行家、产品玩家和业务专家进行深入交流", "agiTexts26");
-            this.appear("，", "agiTexts21");
-            this.appear("从每个人都能用起来的产品实操，到每个组织都必须思考的", "agiTexts22");
-            this.appear("业务转型，", "agiTexts23");
-            this.appear("全方位把握个体与组织如何丝滑迈入 AGI 时代的的技巧与", "agiTexts24");
-            this.appear("策略。", "agiTexts25");
+            // this.appear("/Workshop", "agiTexts20");
+            this.appear("与率先入场的技术行家、产品玩家和业务专家进行深入交", "agiTexts26");
+            this.appear("流，从每个人都能用起来的产品实操，到每个组织都必须", "agiTexts21");
+            this.appear("思考的业务转型，全方位把握个体与组织如何丝滑迈入 ", "agiTexts22");
+            this.appear("AGI 时代的技巧与策略，", "agiTexts23");
+            // this.appear("全方位把握个体与组织如何丝滑迈入 AGI 时代的的技巧与", "agiTexts24");
+            // this.appear("策略。", "agiTexts25");
       }
 
 }
 
 
 if(scrollTop > 800){
-      if(this.agiTexts27==''){
-            this.appear("创新小赛", "agiTexts32");
-            this.appear("/Demo Show", "agiTexts27");
-            this.appear("与投资人、产业方、大模型技术专家和产品专家一起，", "agiTexts28");
-            this.appear("看优秀早期大模型创业项目的创新路演，", "agiTexts29");
-            this.appear("和他们面对面交流，让思想得到更新打磨，为创新带来更切", "agiTexts30");
-            this.appear("实可行的灵感。", "agiTexts31");
+      if(this.agiTexts32==''){
+            this.appear("AGI创新小赛", "agiTexts32");
+            // this.appear("/Demo Show", "agiTexts27");
+            this.appear("与投资人、大模型技术专家和产品行家一起，看优秀早期大", "agiTexts28");
+            this.appear("模型团队的创新路演，让思想得到更新和打磨，为创新带来", "agiTexts29");
+            this.appear("丰富灵感", "agiTexts30");
+            // this.appear("实可行的灵感。", "agiTexts31");
             // this.appear("1份", "agiTexts33");
             this.appear("AGI 创新力量全景图", "agiTexts34");
-            this.appear("基于 Founder Park 与一线投资人、社区技术专家的联合研", "agiTexts35");
-            this.appear("现场发布完整的、当下 AGI 产业创新力量全景图，", "agiTexts36");
-            this.appear("在描绘产业全貌的同时，帮助创新者们看到更多创新机遇。", "agiTexts37");
+            this.appear("Founder Park 与一线投资人、技术专家联合研究，现场发", "agiTexts35");
+            this.appear("布完整版 AGI 创新力量全景图，描绘产业全貌，帮助创新", "agiTexts36");
+            this.appear("者看到更多创新机遇", "agiTexts37");
             // this.appear("实可行的灵感。", "agiTexts38");
 
-            this.appear("除此以外，现场还有 ", "agiTexts39");
+            // this.appear("除此以外，现场还有 ", "agiTexts39");
 
-            this.appear("AGI 体验区 ", "agiTexts40");
-            this.appear("/Play Zone", "agiTexts41");
-            this.appear("全天候展示模型平台和技术解决方案，直接上手最新创新产", "agiTexts42");
-            this.appear("品和工具，", "agiTexts43");
-            this.appear("在这里，你可以和来自各领域的创新者们自由交流，", "agiTexts44");
-            this.appear("结识更多志同道合之人，遇到有影响力的合作伙伴。", "agiTexts45");
+            // this.appear("AGI 体验区 ", "agiTexts40");
+            // this.appear("/Play Zone", "agiTexts41");
+            // this.appear("全天候展示模型平台和技术解决方案，直接上手最新创新产", "agiTexts42");
+            // this.appear("品和工具，", "agiTexts43");
+            // this.appear("在这里，你可以和来自各领域的创新者们自由交流，", "agiTexts44");
+            // this.appear("结识更多志同道合之人，遇到有影响力的合作伙伴。", "agiTexts45");
 
 
    
@@ -1022,11 +1027,11 @@ if(scrollTop > 800){
   
   
     .img_logo_two{
-      width: 38%;
+      width: 60%;
       position: absolute;
-    top: 77%;
-    color: white;
-    left: 3%;
+        top: 77%;
+        color: white;
+        left: 3%;
       img{
         width: 100%;
       }
@@ -1126,7 +1131,7 @@ font-size: 60px!important;
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 190%;
+    top: 130%;
     margin-top: 20%;
 
     .videoStyle{
@@ -1151,7 +1156,8 @@ font-size: 60px!important;
 
 
    .agi_shwo_item{
-margin-top: 20%;
+      margin-top: 30%;
+      padding-right: 2%;
 
     h2{
       display: flex;
@@ -1165,10 +1171,11 @@ margin-top: 20%;
     // }
     p{
       display: flex;
-      font-size: 3.4vw;
+      font-size: 3.6vw;
       color: white;
       background: black;
       width: fit-content;
+      text-align: left;
     }
     .agi_shwo_item_img{
       display: flex;
@@ -1181,4 +1188,9 @@ margin-top: 20%;
       }
     }
    }
+
+//    .agi_shwo .agi_shwo_item:nth-child(1){
+//   margin-top: 15% !important;
+// }
+ 
   </style>

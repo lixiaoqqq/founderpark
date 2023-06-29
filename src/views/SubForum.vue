@@ -160,7 +160,7 @@
     </div>
    </div>
    <div class="footer_img">
-      <img src="../assets/foter.png" alt="">
+    <img src="../assets/footerimg.png" alt="">
      </div>
   </div>
   

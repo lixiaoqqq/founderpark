@@ -107,7 +107,7 @@
       </div>
      </div>
      <div class="footer_img">
-        <img src="../assets/foter.png" alt="">
+      <img src="../assets/footerimg.png" alt="">
     </div>
     </div>
     
@@ -188,8 +188,8 @@
     },
     mounted(){
       window.addEventListener('scroll', this.handleScroll, true);
-      this.appear("常见问题", "SubforumText");
-      this.appear("Q&A：", "SubforumText1");
+      // this.appear("常见问题", "SubforumText");
+      this.appear("常见问题", "SubforumText1");
       clearInterval(this.Subforumtimess)
          this.Subforumtimess = window.setTimeout(()=>{
           this.Intervaltimes =  window.setInterval(() => {

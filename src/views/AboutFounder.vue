@@ -91,7 +91,7 @@
       </div>
      </div>
      <div class="footer_img">
-        <img src="../assets/foter.png" alt="">
+      <img src="../assets/footerimg.png" alt="">
     </div>
     </div>
     
@@ -172,8 +172,8 @@
     },
     mounted(){
       window.addEventListener('scroll', this.handleScroll, true);
-      this.appear("关于 Founder", "SubforumText");
-      this.appear("Park：", "SubforumText1");
+      // this.appear("关于 Founder", "SubforumText");
+      this.appear("关于我们", "SubforumText1");
       clearInterval(this.Subforumtimess)
          this.Subforumtimess = window.setTimeout(()=>{
           this.Intervaltimes =  window.setInterval(() => {
@@ -248,7 +248,7 @@
     .founder_logo3{
       width: 100%;
       margin-top: 20%;
-      margin-bottom: 5%;
+      // margin-bottom: 5%;
       img{
         width: 20%;
       }

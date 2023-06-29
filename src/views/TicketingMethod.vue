@@ -21,6 +21,23 @@
         <div class="private_directors">
        <img src="../assets/zao1.jpg" alt="">
     </div>
+
+    <div     class="rotate"></div>
+    <div class="price_item">
+      
+      <div class="price_item_left">
+    
+        <p>¥349</p>
+
+
+        <span>¥499</span>
+        
+      </div >
+        <div class="price_item_right">
+          <p>7 月 22 日 单日票</p>
+          <p>7 月 10 日 恢复原价</p>
+        </div>
+    </div>
     <div class="ticket_sales">
             <!-- <div class="ticket_sales_Txte">
                   <span>票品售出，除因不可抗力因素导致大</span>
@@ -36,6 +53,24 @@
     <div class="method">
         <div class="private_directors">
           <img src="../assets/zao2.jpg" alt="">
+    </div>
+    <div 
+    class="rotate"
+   ></div>
+    <div class="price_item">
+      
+      <div class="price_item_left">
+    
+        <p>¥349</p>
+
+
+        <span>¥499</span>
+        
+      </div >
+        <div class="price_item_right">
+          <p>7 月 22 日 单日票</p>
+          <p>7 月 10 日 恢复原价</p>
+        </div>
     </div>
     <div class="ticket_sales">
             <!-- <div class="ticket_sales_Txte">
@@ -53,6 +88,25 @@
         <div class="private_directors">
           <img src="../assets/zao3.jpg" alt="">
 
+    </div>
+
+    <div
+    class="rotate"
+    style=""></div>
+    <div class="price_item">
+      
+      <div class="price_item_left">
+    
+        <p>¥349</p>
+
+
+        <span>¥499</span>
+        
+      </div >
+        <div class="price_item_right">
+          <p>7 月 22 日 单日票</p>
+          <p>7 月 10 日 恢复原价</p>
+        </div>
     </div>
     <div class="ticket_sales">
             <!-- <div class="ticket_sales_Txte">
@@ -97,12 +151,10 @@
     </div>
    </div>
    <div class="footer_img">
-      <img src="../assets/foter.png" alt="">
+         <img src="../assets/footerimg.png" alt="">
      </div>
   </div>
-  
   </template>
-
   <script>
   import Dialog from "../components/Navtop.vue";
   import TicketButton from "../components/Buynow.vue";
@@ -192,7 +244,7 @@
   },
   beforeRouteEnter(to,from,next){
     console.log('beforeRouteEnter');
-    window.document.body.style.background='#1D38FF'
+    window.document.body.style.background='rgb(159,203,255)'
     console.log('beforeRouteEnter');
   // window.document.body.style.background='#D3FF19'
        const LinnerWidth=window.innerWidth
@@ -299,6 +351,39 @@
     }
   }
 
+  .price_item{
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    .price_item_left{
+      display: flex;
+      p{
+        font-size: 10vw;
+      }
+      div{
+        width: 5%;
+        height: 1px;
+        border-top: 1px solid;
+        transform: rotate(60deg);
+        position: relative;
+        top: 10px;
+        color: red;
+        left: 3%;
+      }
+      p{
+        font-family: 'OPPOSans_B';
+      }
+      span{
+        color: #595757;
+        font-size: 6vw;
+
+      }
+    }
+    .price_item_right{
+      text-align: right;
+    }
+  }
 
   // .SubForum_Text{
   //   h1{
@@ -311,4 +396,16 @@
   // }
 
 
+  .rotate{
+    width: 15%;
+    height: 1px;
+    border-top: 2px solid;
+    transform: rotate(15deg);
+    position: relative;
+    top: 30px;
+    color: red;
+    left: 27%;
+    z-index: -9;
+
+  }
   </style>

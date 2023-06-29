@@ -22,6 +22,7 @@
 .Innovative_Power h3 {
   font-size: 8vw;
   margin: 5% 0;
+  font-family: "OPPOSans_B";
 }
 .Innovative_Power .power_span {
   margin-top: 5%;
@@ -60,8 +61,15 @@
   width: 100%;
 }
 
+.tablist_itme_list_ms span {
+  width: 89%;
+  display: block;
+  margin-left: 5%;
+}
+
 .tablist_itme_list_wz {
-  width: 25%;
+  width: 30%;
+  margin-left: 10%;
 }
 
 .tablist_itme_list_wz ul {
@@ -73,6 +81,17 @@
   list-style: disc;
 }
 
+.tablist_itme_list_wz > p::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: -3px;
+}
+
 .tablist_itme {
   padding: 0 2%;
 }
@@ -80,7 +99,7 @@
 .item_color {
   background-color: #E0E0E0;
 }
-.item_color p {
+.item_color > p {
   font-size: 8vw;
   font-family: "OPPOSans_B";
   margin: 5% 0;
@@ -92,14 +111,26 @@
   list-style: disc;
 }
 
-.tablist_itme_list_wz > p::before {
+.tablist_itme_list_ms > p::before {
   content: "";
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   background-color: black;
   border-radius: 50%;
-  margin-right: 5px;
+  position: relative;
+  top: -3px;
+}
+
+.tablist_itme_list_msp::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: -3px;
 }
 
 .private_directors img {

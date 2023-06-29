@@ -17,7 +17,7 @@
     </div>
 
 <br><br><br>
-    <h2>大会交流群</h2>
+    <h2>加入 AGI 交流群</h2>
     <br>
 
     <div class="Nopublic">
@@ -25,12 +25,14 @@
                 <img src="../assets/erweima.png" alt="">
             </div>
            <div class="nopublic_text">
-              <p style="">及时获取票务优惠信息及大会筹备「 小道消息」</p>
+              <p style="">扫码添加小助手入群</p>
+              <p style="">获取大会筹备「小道消息」</p>
+              <p style="">探讨大模型最新资讯</p>
 
-              <div class="nopublic_text_bon">
+              <!-- <div class="nopublic_text_bon">
                 <span >微信扫码添加小助手，</span>
                  <span>加入活动官方群</span>
-              </div>
+              </div> -->
               
           </div>
     </div>
@@ -38,33 +40,31 @@
     <br>
     <br>
     <div class="office_hour">
-      <h2>Founder Park官方微信</h2>
+      <h2>关注 Founder Park</h2>
   </div>
   <div class="Nopublic">
             <div class="nopublic_img">
                 <img src="../assets/ZVWsxT.png" alt="">
             </div>
             <div class="nopublic_text">
-              <p style=" margin-bottom: 22%;">与世界同频，率先了解更多 AGI 新鲜内容</p>
-              <p style="margin-top: 10%;font-size: 3vw;">微信扫码关注公众号</p>
+              <p style=" margin-bottom: 2%;">扫码关注公众号容</p>
+              <p style=" margin-bottom: 2%;">紧跟大模型时代浪潮</p>
+              <p style=" margin-bottom: 2%;">不错过任何最新内容</p>
+              <!-- <p style="margin-top: 10%;font-size: 3vw;">微信扫码关注公众号</p> -->
           </div>
     </div>
     <br>
     <br>   <br>
     <br>
 
-    <h2 >大会合作邮箱</h2>
-    <br>
-    <br>
-    <p style="
-    font-size: 6.4vw;
-">商务 & 媒体 & 活动合作及咨询，请发送至 </p>
-<br>
+    <h2 >更多合作</h2>
+    <p style="font-size: 6.4vw;width: 70%;">商务、媒体、活动咨询请发送至邮箱： </p>
 <br>
     <p style="
     font-size: 4vw;
 ">founderpark@geekpark.net</p>
 
+    <br>
     <br>
     <br>
   
@@ -94,7 +94,7 @@
     <br>
    </div>
    <div class="footer_img">
-      <img src="../assets/foter.png" alt="">
+    <img src="../assets/footerimg.png" alt="">
      </div>
   </div>
   </template>
@@ -167,7 +167,7 @@
   },
   mounted(){
     window.addEventListener('scroll', this.handleScroll, true);
-    this.appear("联系我们：", "SubforumText");
+    this.appear("联系我们", "SubforumText");
     // clearInterval(this.Subforumtimess)
     //    this.Subforumtimess = window.setTimeout(()=>{
     //     this.Intervaltimes =  window.setInterval(() => {
@@ -255,6 +255,7 @@
     // margin-top: 30px;
     margin-top: 10%;
     justify-content:space-evenly;
+    align-items: center;
     .nopublic_img{
       width: 50%;
       img{
@@ -265,7 +266,7 @@
       margin-left: 20px;
       width: 46%;
       p{
-      font-size: 5vw;
+      font-size: 3.5vw;
       }
     }
   }
@@ -293,6 +294,7 @@
   }
 h2{
 font-size: 12vw;
+font-weight: 400;
 }
 
   .office_hour{
