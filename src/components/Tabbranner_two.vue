@@ -25,7 +25,7 @@
            </div>
            <div class="tablist_itme_list_ms">
               <p>
-              你好收到啦客户可拉伸考
+              你好收到啦客户可拉
               </p>
               <span>的数量看哈客户来解答和昆仑山卡拉胶电</span>
 
@@ -55,7 +55,7 @@
            </div>
            <div class="tablist_itme_list_ms">
               <p>
-              你好收到啦客户可拉伸考
+              你好收到啦客户可拉
               </p>
               <span>的数量看哈客户来解答和昆仑山卡拉胶电</span>
 
@@ -85,7 +85,7 @@
            </div>
            <div class="tablist_itme_list_ms">
               <p>
-              你好收到啦客户可拉伸考
+              你好收到啦客户可拉
               </p>
               <span>的数量看哈客户来解答和昆仑山卡拉胶电</span>
 
@@ -124,7 +124,7 @@
            </div>
            <div class="tablist_itme_list_ms">
               <p>
-              你好收到啦客户可拉伸考
+              你好收到啦客户可拉
               </p>
               <span>的数量看哈客户来解答和昆仑山卡拉胶电</span>
 
@@ -151,7 +151,7 @@
            </div>
            <div class="tablist_itme_list_ms">
               <p>
-              你好收到啦客户可拉伸考
+              你好收到啦客户可拉
               </p>
               <span>的数量看哈客户来解答和昆仑山卡拉胶电</span>
 
@@ -163,7 +163,7 @@
         <div style="border-top：none" class="tablist_itme_time">
           10:00-10:20AM
         </div>
-        <h4 class="Demoshow_title">传导空间二层</h4>
+        <h4  class="Demoshow_title">传导空间二层</h4>
 
         <div style="width: 100%;" class="tablist_itme_list_ms">
               <p style="
@@ -171,7 +171,7 @@
                     margin-left: 1%;
                     margin-top: 5%;
                 ">
-              你好收到啦客户可拉伸考的数量看哈客户来解答和昆仑
+              你好收到啦客户可拉伸考的数
               </p>
                 <span style="
                     margin-left: 3%;
@@ -225,7 +225,9 @@
     </div>
 
 
-    <h4 class="Demoshow_title">传导空间二层</h4>
+    <h4 style="
+    margin-left: 2%;
+"  class="Demoshow_title">传导空间二层</h4>
         <div style="
                 border-bottom: none;
             " class="tablist_itme_lists">
@@ -245,7 +247,7 @@
            </div>
            <div class="tablist_itme_list_ms">
               <p>
-              你好收到啦客户可拉伸考
+              你好收到啦客户可拉
               </p>
               <span>的数量看哈客户来解答和昆仑山卡拉胶电</span>
 
@@ -685,7 +687,7 @@ padding: 6% 2%;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid ;
-  padding: 5% 0;
+  padding: 5% 2%;
 }
 .tablist_itme_lists p::before {
     content: "";
@@ -701,6 +703,8 @@ padding: 6% 2%;
   display: flex;
   justify-content: space-between;
     width: 90%;
+    padding-bottom: 10%;
+    border-bottom: 1px solid;
   div{
 margin-top: 5%;
    >.tablist_itme_list_tp{

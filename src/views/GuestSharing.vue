@@ -123,7 +123,7 @@
     currentView:"Tab1",
     guestlist:[
       {
-          datatime:"7/22",
+          datatime:"07/22",
           weeks:"（六）",
           children:[
             {
@@ -164,7 +164,7 @@
           ]
       },
       {
-          datatime:"7/23",
+          datatime:"07/23",
           weeks:"（日）",
 
           children:[
@@ -364,7 +364,7 @@
   .timeTab{
     display: flex;
     justify-content: space-evenly;
-    font-size: 12vw;
+    font-size: 10vw;
     color:  #595757;
     margin: 10% 0;
 >div{
