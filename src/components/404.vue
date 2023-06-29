@@ -35,10 +35,36 @@
     }
     </script>
     <style lang="scss" scoped>
+
+@media only screen and (max-width: 3500px) {
+    .box_404{
+      background-image: url(http://lc-RanMoNzS.cn-n1.lcfile.com/c8tqRyYtkFPxQSeQDkVEQA1Px2KvsSpF/404%E9%A1%B5%E9%9D%A2300dpi.png);
+    }
+}
+@media only screen and (max-width: 2200px) {
+  .warp_box .box_404 .box_gif_img{
+    width: 28%;
+  }
+    .box_404{
+      background-image: url(../assets/404页面150dpi.png);
+    }
+}
+
+
+@media only screen and (max-width: 1291px) {
+  .warp_box .box_404 .box_gif_img{
+    width: 28%;
+  }
+    .box_404{
+      background-image: url(../assets/404页面背景1.jpg);
+    }
+}
+
+
     .warp_box{
       height: 100%;
       .box_404{
-        background-image: url(../assets/404页面150dpi.png);
+        // background-image: url(http://lc-RanMoNzS.cn-n1.lcfile.com/c8tqRyYtkFPxQSeQDkVEQA1Px2KvsSpF/404%E9%A1%B5%E9%9D%A2300dpi.png);
         background-size: 100% 100%;
         height: 100%;
         .box_img{
@@ -53,7 +79,7 @@
           }
         }
         .box_gif_img{
-          width: 30%;
+          width: 22%;
           position: absolute;
           top: 20%;
           left: 19%;
@@ -64,9 +90,5 @@
       }
   }
 
-//   @media only screen and (min-width: 1920px) {
 
-
-
-// }
 </style>
