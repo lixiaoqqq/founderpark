@@ -99,7 +99,7 @@
       
       <div class="price_item_left">
     
-        <p>¥549</p>
+        <p>¥599</p>
 
 
         <span>¥799</span>

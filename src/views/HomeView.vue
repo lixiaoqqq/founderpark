@@ -657,7 +657,7 @@ if(scrollTop > 800){
       if (scrollTop > 300) {
         this.BoxFixed = true;
 
-        clearInterval(this.Subforumtimess)
+        // clearInterval(this.Subforumtimess)
       //  this.Subforumtimess = window.setTimeout(()=>{
       //   this.Intervaltimes =  window.setInterval(() => {
       //       console.log(this.Subforumtimess,'Subforumtimess');
