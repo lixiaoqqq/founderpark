@@ -2,7 +2,8 @@
 <template>
   <div class="box_bigbox">
         
-
+    <div class="mengceng">
+           </div>
   <div class="warp_box">
                 <div class="warp">
                   
@@ -134,8 +135,7 @@
              <!-- <h3 style="font-family:'OPPOSans_B';"> {{ agiText10 }}</h3>
              <h3 style="font-family:'OPPOSans_B';"> {{ agiText11 }}</h3> -->
            </div>
-           <div class="mengceng">
-           </div>
+       
           <div class="videobottom"> 
                       <video ref="video" class="videoStyle" webkit-playsinline="" playsinline="true" preload="none"  poster="../assets/fengmian1.jpg" x5-video-player-type="h5"    controls  loop>
                         <source src="http://lc-RanMoNzS.cn-n1.lcfile.com/hOkSoOMf4yV9D3456Dzc8zyGgjOCgNbV/AI%20Quest%E6%A8%AA%E7%89%88_0625_x264.mp4" type="video/mp4">
@@ -1183,13 +1183,14 @@ font-size: 60px!important;
   // }
 
 .mengceng{
-   top: -63%;
-    position: relative;
+  width: 100%;
+ 
+    position: absolute;
     height: 3000px;
+    // z-index: -9;
+    top: 100%;
+    // background: red;
     background: rgba(24, 24, 24, 0.5);
-    z-index: -9;
-    width: 100%;
-    margin: 0 auto;
 }
   .videobottom{
     // background: red;
