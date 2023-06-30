@@ -27,7 +27,7 @@
       
       <div class="price_item_left">
     
-        <p>¥399</p>
+        <p>¥349</p>
 
 
         <span>¥499</span>
@@ -62,7 +62,7 @@
       
       <div class="price_item_left">
     
-        <p>¥399</p>
+        <p>¥349</p>
 
 
         <span>¥499</span>
