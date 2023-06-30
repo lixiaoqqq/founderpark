@@ -190,7 +190,7 @@
                               <p>{{ agiTexts38 }}</p>
                             </div>
 
-                            <div class="agi_shwo_item">
+                            <!-- <div class="agi_shwo_item">
                               <h2>{{ agiTexts13 }} </h2>
                               <h2>{{ agiTexts14 }}</h2>
                                   <br>
@@ -198,7 +198,7 @@
                               <p>{{ agiTexts16 }}</p>
                               <p>{{ agiTexts17 }}</p>
                               <p>{{ agiTexts18 }}</p>
-                            </div>
+                            </div> -->
                             <!-- <div class="agi_shwo_item">
                               <h2>{{ agiTexts39 }} </h2>
                               <h2>{{ agiTexts40 }}</h2>

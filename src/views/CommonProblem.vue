@@ -147,8 +147,12 @@ A：购票用户可按照现场指引在指定区域就坐，座位先到先得�
     }
     },
     methods:{
+
+  
       gotoroute(pathname){
         this.$router.push(pathname)
+
+        
       },  
       appear(content, property) {
           this[property] = "";
