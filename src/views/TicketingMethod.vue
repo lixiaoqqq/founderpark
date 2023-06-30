@@ -399,13 +399,13 @@
 
 
   .rotate{
-    width: 15%;
+    width: 60px;
     height: 1px;
-    border-top: 2px solid;
+    border-top: 3px solid;
     transform: rotate(15deg);
     position: relative;
     top: 30px;
-    color: red;
+    color: #E60012;
     left: 27%;
     z-index: -9;
 

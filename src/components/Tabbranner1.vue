@@ -723,7 +723,7 @@ margin-left: 1%;
   border-bottom: 1px solid ;
   padding: 5% 4%;
 }
-.tablist_itme_lists p::before {
+.tablist_itme_lists>p::before {
     content: "";
     display: inline-block;
     width: 5px;

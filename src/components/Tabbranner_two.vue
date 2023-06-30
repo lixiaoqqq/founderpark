@@ -681,7 +681,7 @@ padding: 6% 4%;
     border-radius: 50%;
     position: relative;
     top: -3px;
-    left: -2px;
+    left: -5px;
 }
 
 .guest_items_left p::before {
@@ -693,7 +693,8 @@ padding: 6% 4%;
     border-radius: 50%;
     position: relative;
     top: -3px;
-    left: -2px;
+    left: -5px;
+
 
 }
 
@@ -706,7 +707,8 @@ padding: 6% 4%;
     border-radius: 50%;
     position: relative;
     top: -3px;
-    left: -2px;
+    left: -5px;
+
 
 }
 .tablist_itme_lists{
@@ -715,16 +717,7 @@ padding: 6% 4%;
   border-bottom: 1px solid ;
   padding: 5% 4%;
 }
-.tablist_itme_lists p::before {
-    content: "";
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background-color: black;
-    border-radius: 50%;
-    position: relative;
-    top: -3px;
-}
+
 .conduction_space{
   display: flex;
   justify-content: space-between;

@@ -134,8 +134,10 @@
              <!-- <h3 style="font-family:'OPPOSans_B';"> {{ agiText10 }}</h3>
              <h3 style="font-family:'OPPOSans_B';"> {{ agiText11 }}</h3> -->
            </div>
+           <div class="mengceng">
+           </div>
           <div class="videobottom"> 
-                      <video ref="video" class="videoStyle" webkit-playsinline="" playsinline="true" preload="none"  poster="../assets/Group_shipin.png" x5-video-player-type="h5"    controls  loop>
+                      <video ref="video" class="videoStyle" webkit-playsinline="" playsinline="true" preload="none"  poster="../assets/fengmian1.jpg" x5-video-player-type="h5"    controls  loop>
                         <source src="http://lc-RanMoNzS.cn-n1.lcfile.com/hOkSoOMf4yV9D3456Dzc8zyGgjOCgNbV/AI%20Quest%E6%A8%AA%E7%89%88_0625_x264.mp4" type="video/mp4">
                       </video>
                       <!-- <button @click="toggleFullScreen">
@@ -312,6 +314,9 @@
                             </div>
         </div>
                           -->
+<div class="heart" v-if="isjiantou">
+  <img src="../assets/xiahua_icon.png" alt="">
+</div>
 
 
                   </div>
@@ -337,6 +342,7 @@ export default {
         shows: false,
       timess:null,
       Subforum1:false,
+      isjiantou:false,
       Intervaltimes:null,
       BoxFixed: false,
       // nav_title_sapn_flag:false,
@@ -558,6 +564,10 @@ export default {
     },
     handleScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+      if(scrollTop>0){
+        this.isjiantou=false
+      }
 if(scrollTop > 300){
   if (this.agiTexts7=== "") {
   // this.appear(" Playground 概念来源 ——", "agiTexts1");
@@ -689,6 +699,18 @@ if(scrollTop > 800){
   },
 
   mounted() {
+
+      // let top = document.documentElement.scrollTop//获取点击时页面的滚动条纵坐标位置 
+      const timeTops = setTimeout(() => {
+
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+          console.log('scrollTop',scrollTop);
+        // document.documentElement.scrollTop = top -= 50//一次减50往上滑动
+        if (scrollTop <= 0) {
+          // clearInterval(timeTop)
+          this.isjiantou=true
+        }
+      }, 2000)//定时调用函数使其更顺滑
     // document.addEventListener("fullscreenchange", this.exitFullScreen);
     // document.addEventListener("webkitfullscreenchange", this.exitFullScreen);
     // document.addEventListenebeforeDestroyr("mozfullscreenchange", this.exitFullScreen);
@@ -777,6 +799,34 @@ if(scrollTop > 800){
 </script>
   
 <style lang="scss" scoped>
+
+.heart{
+    animation: heart 1.3s ease-in-out 0.7s infinite alternate;
+    position: fixed;
+    font-size: 6vw;
+    left: 44%;
+    width: 12%;
+    // background: red;
+    bottom: 6%;
+    img{
+      width: 100%;
+      display: block;
+    }
+    // transform: rotate(90deg);
+}
+
+//margin-top会发生卡顿
+@keyframes heart{
+from{margin-top:0px;}
+to{margin-top:-6px;}
+}
+
+//用transform就流畅了
+@keyframes heart{
+from{transform:translate(0,0)}
+to{transform:translate(0,6px)}
+}
+
 
 .style_Box_home{
   display: flex;
@@ -1130,6 +1180,15 @@ font-size: 60px!important;
   //   object-fit: fill
   // }
 
+// .mengceng{
+//    top: -63%;
+//     position: relative;
+//     height: 1000px;
+//     background: rgba(24, 24, 24, 0.5);
+//     z-index: 9;
+//     width: 92%;
+//     margin: 0 auto;
+// }
   .videobottom{
     // background: red;
     // position: fixed;
