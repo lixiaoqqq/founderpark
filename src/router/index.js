@@ -121,6 +121,7 @@ const routes = [
 ]
 const router = new VueRouter({
   mode:'history',
+  base: '/',
   routes,
     // return 期望滚动到哪个的位置
     scrollBehavior (to, from, savedPosition) {

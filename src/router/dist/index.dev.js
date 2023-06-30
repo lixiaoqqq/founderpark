@@ -152,6 +152,7 @@ var routes = [{
 }];
 var router = new _vueRouter["default"]({
   mode: 'history',
+  base: '/',
   routes: routes,
   // return 期望滚动到哪个的位置
   scrollBehavior: function scrollBehavior(to, from, savedPosition) {

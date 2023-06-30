@@ -91,7 +91,9 @@
       </div>
      </div>
      <div class="footer_img">
-      <img src="../assets/footerimg2222.png" alt="">
+      
+     
+      <img src="../assets/footer2.png" alt="">
     </div>
     </div>
     
