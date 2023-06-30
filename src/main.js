@@ -15,6 +15,9 @@ import '@/assets/font/font.css'
 import CanvasPoster from 'vue-canvas-poster' 
 import 'vant/lib/index.css'
 import '../src/loythcss/dist/index.css'
+import showlog from './utils/showlog';
+Vue.prototype.showlog = showlog;
+
 Vue.use(CanvasPoster)
 Vue.use(Tab);
 Vue.use(Tabs);

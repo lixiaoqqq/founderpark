@@ -118,7 +118,7 @@ A：购票用户可按照现场指引在指定区域就坐，座位先到先得�
       </div>
      </div>
      <div class="footer_img">
-      <img src="../assets/footer22.jpg" alt="">
+     <img src="../assets/footerimg2222.png" alt="">
     </div>
     </div>
     

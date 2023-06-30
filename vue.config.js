@@ -14,6 +14,7 @@ module.exports = defineConfig({
     },
     // 此处开启 https
     https: true
-  }
+  },
+  
 })
 

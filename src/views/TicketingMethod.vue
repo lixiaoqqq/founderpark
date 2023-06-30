@@ -34,7 +34,7 @@
         
       </div >
         <div class="price_item_right">
-          <p>7 月 22 日 单日票</p>
+          <!-- <p>7 月 22 日 单日票</p> -->
           <p>7 月 10 日 恢复原价</p>
         </div>
     </div>
@@ -69,7 +69,7 @@
         
       </div >
         <div class="price_item_right">
-          <p>7 月 23 日 单日票</p>
+          <!-- <p>7 月 23 日 单日票</p> -->
           <p>7 月 10 日 恢复原价</p>
         </div>
     </div>
@@ -106,7 +106,7 @@
         
       </div >
         <div class="price_item_right">
-          <p>两日通享票</p>
+          <!-- <p>两日通享票</p> -->
           <p>7 月 10 日 恢复原价</p>
         </div>
     </div>
@@ -153,7 +153,7 @@
     </div>
    </div>
    <div class="footer_img">
-         <img src="../assets/footer22.jpg" alt="">
+        <img src="../assets/footerimg2222.png" alt="">
      </div>
   </div>
   </template>
@@ -357,6 +357,7 @@
     width: 96%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 3%;
     .price_item_left{
       display: flex;
@@ -409,5 +410,8 @@
     left: 27%;
     z-index: -9;
 
+  }
+  .price_item_left span{
+    font-family: 'OPPOSans_B';
   }
   </style>

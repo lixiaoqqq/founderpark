@@ -320,6 +320,7 @@
     <div style="
     border-top: none;
     width: 91%;
+    border-top: 1px solid ;
     margin: 0 auto;
 " class="tablist_itme_time">
           10:00-10:20AM
@@ -495,7 +496,9 @@
     <div class="Innovative_Power">
           
       <h3> AGI 创新力量全景图</h3>
-      <div class="tablist_itme_time">现场发布</div>
+      <div style="
+    border-top: 1px solid;
+" class="tablist_itme_time">现场发布</div>
       <!-- <div class="power_span">
           <p>创业人士联合研究、</p>
              <p>标记当下最值得关注的、最具价值创新公司</p>

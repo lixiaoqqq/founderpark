@@ -30,10 +30,13 @@ require("vant/lib/index.css");
 
 require("../src/loythcss/dist/index.css");
 
+var _showlog = _interopRequireDefault(require("./utils/showlog"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 // 引入video.js
 _vue["default"].prototype.$video = _video["default"];
+_vue["default"].prototype.showlog = _showlog["default"];
 
 _vue["default"].use(_vueCanvasPoster["default"]);
 

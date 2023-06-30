@@ -275,7 +275,7 @@
 
                         </div>
                        <div class="footer_img">
-                         <img src="../assets/footer22.jpg" alt="">
+                        <img src="../assets/footerimg2222.png" alt="">
                       </div>
                  
                 </div>
@@ -699,6 +699,8 @@ if(scrollTop > 800){
   },
 
   mounted() {
+    this.showlog("这是效果哟！");
+
 
       // let top = document.documentElement.scrollTop//获取点击时页面的滚动条纵坐标位置 
       const timeTops = setTimeout(() => {
@@ -771,7 +773,7 @@ if(scrollTop > 800){
 
   },
   beforeRouteEnter(to,from,next){
-  console.log('beforeRouteEnter');
+  // console.log('beforeRouteEnter');
   // window.document.body.style.background='#D3FF19'
        const LinnerWidth=window.innerWidth
         const big_box =document.querySelector('.box_bigbox')
@@ -920,7 +922,7 @@ to{transform:translate(0,6px)}
     position: absolute;
   // bottom: 10%;
     position: absolute;
-    backdrop-filter: blur(160px);
+    // backdrop-filter: blur(160px);
     padding: 10% 0;
     width: 92%;
     top: 100%;
@@ -1180,15 +1182,15 @@ font-size: 60px!important;
   //   object-fit: fill
   // }
 
-// .mengceng{
-//    top: -63%;
-//     position: relative;
-//     height: 1000px;
-//     background: rgba(24, 24, 24, 0.5);
-//     z-index: 9;
-//     width: 92%;
-//     margin: 0 auto;
-// }
+.mengceng{
+   top: -63%;
+    position: relative;
+    height: 3000px;
+    background: rgba(24, 24, 24, 0.5);
+    z-index: -9;
+    width: 100%;
+    margin: 0 auto;
+}
   .videobottom{
     // background: red;
     // position: fixed;
