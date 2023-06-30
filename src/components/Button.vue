@@ -15,21 +15,21 @@
                  border-radius: 50%;
                  padding: 11px 12px;
                  background: #D3FF19;
-                 width: 80%;
+                 width: 50%;
                  color: black;
                  text-align: center;
                  border: 1px solid;
              " 
              @click="goupiao" 
              >
-             <p>票务</p>
-             <p>中心</p>
+             <p>票务中心</p>
+             <!-- <p>中心</p> -->
            </div>
            <div 
            @click="showExtension"
            >
-             <p>转发</p>
-             <p>朋友</p>
+             <p>转发朋友</p>
+             <!-- <p></p> -->
            </div>
            <!-- <div 
            @click="myhome"
@@ -94,12 +94,12 @@ methods:{
     position: fixed;
     z-index: 99;
     bottom: 10%;
-    right: 10%;
+    right: 0;
     div:nth-child(2){
       border-radius: 50%;
       padding: 11px;
       background: #FFFFFF;
-      width: 80%;
+      width: 50%;
       text-align: center;
       border: 1px solid ;
    }

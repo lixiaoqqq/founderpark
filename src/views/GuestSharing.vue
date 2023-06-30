@@ -97,7 +97,7 @@
     </div>
    </div>
    <div class="footer_img">
-    <img src="../assets/footerimg.png" alt="">
+    <img src="../assets/footer22.jpg" alt="">
      </div>
   </div>
   
@@ -312,7 +312,7 @@
         //  big_box.style.display='none'
           console.log('请使用手机查看网站');
         //  alert('请使用手机访问网站')
-         next('/404')
+         next('/desktop')
      }else{
       next()
   }
@@ -366,7 +366,7 @@
     justify-content: space-evenly;
     font-size: 10vw;
     color:  #595757;
-    margin: 10% 0;
+    margin: 10% 4%;
 >div{
   font-family: 'OPPOSans_R';
   background: linear-gradient(to right,#000,#000) no-repeat right bottom;
@@ -433,6 +433,7 @@
       background-color: black;
       border-radius: 50%;
       margin-right: 5px;
+      z-index: -99;
     }
     .tablist_itme_list_wz p{
       margin-left: 10%;
@@ -547,9 +548,7 @@
   }
 
   .toptext{
-    width: 97%;
+    width: 96%;
   }
-  .fixde_AGI{
-    width: 95%;
-  }
+ 
   </style>

@@ -91,7 +91,7 @@
       </div>
      </div>
      <div class="footer_img">
-      <img src="../assets/footerimg.png" alt="">
+      <img src="../assets/footer22.jpg" alt="">
     </div>
     </div>
     
@@ -193,7 +193,7 @@
         //  big_box.style.display='none'
           console.log('请使用手机查看网站');
         //  alert('请使用手机访问网站')
-         next('/404')
+         next('/desktop')
      }else{
   }
       next()

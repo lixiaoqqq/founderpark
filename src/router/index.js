@@ -106,7 +106,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/GuestSharing.vue')
   },
 
-  {     path: '/404',       
+  {     path: '/desktop',       
   component: () => import('../components/404.vue'),       
   hidden: true     
 }, 

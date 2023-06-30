@@ -137,7 +137,7 @@ var routes = [{
     });
   }
 }, {
-  path: '/404',
+  path: '/desktop',
   component: function component() {
     return Promise.resolve().then(function () {
       return _interopRequireWildcard(require('../components/404.vue'));

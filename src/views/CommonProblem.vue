@@ -118,7 +118,7 @@ A：购票用户可按照现场指引在指定区域就坐，座位先到先得�
       </div>
      </div>
      <div class="footer_img">
-      <img src="../assets/footerimg.png" alt="">
+      <img src="../assets/footer22.jpg" alt="">
     </div>
     </div>
     
@@ -222,7 +222,7 @@ A：购票用户可按照现场指引在指定区域就坐，座位先到先得�
         //  big_box.style.display='none'
           console.log('请使用手机查看网站');
         //  alert('请使用手机访问网站')
-         next('/404')
+         next('/desktop')
      }else{
       next()
   }
@@ -268,7 +268,6 @@ A：购票用户可按照现场指引在指定区域就坐，座位先到先得�
     }
 
     .title_item{
-      width: 94%;
       padding-left: 4%;
       margin-top: 10%;
       .title{

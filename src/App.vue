@@ -234,7 +234,7 @@ h1{
     font-size: 3.5vw;
     font-family: 'OPPOSans_B';
   }
-  h1,h3,h4,h5{
+  h1,h2,h3,h4,h5{
     font-weight: 400;
   }
 </style>

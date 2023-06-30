@@ -273,7 +273,7 @@
 
                         </div>
                        <div class="footer_img">
-                         <img src="../assets/footerimg.png" alt="">
+                         <img src="../assets/footer22.jpg" alt="">
                       </div>
                  
                 </div>
@@ -759,7 +759,7 @@ if(scrollTop > 800){
         //  big_box.style.display='none'
           console.log('请使用手机查看网站');
         //  alert('请使用手机访问网站')
-         next('/404')
+         next('/desktop')
      }else{
       next()
   }
@@ -800,7 +800,7 @@ if(scrollTop > 800){
     display: flex;
     align-items: center;
     font-family:'OPPOSans_B' ;
-    margin-left: 1%;
+    margin-left: 2%;
     width: 90%;
     span{
      width: 10px;
@@ -813,7 +813,7 @@ if(scrollTop > 800){
 }
 .button_nav {
   background: #1E1E1E;
-    padding: 25% 3%;
+    padding: 25% 4%;
   h1{
     margin-top: 1%;
   }
@@ -867,10 +867,14 @@ if(scrollTop > 800){
 }
 .agiText{
   // background: red;
-  position: absolute;
+    position: absolute;
   // bottom: 10%;
-  top: 100%;
-  margin-left: 3%;
+    position: absolute;
+    backdrop-filter: blur(160px);
+    padding: 10% 0;
+    width: 92%;
+    top: 100%;
+    margin-left: 4%;
   h3{
     color: #FFFFFF;
     width: fit-content;
@@ -1017,7 +1021,7 @@ if(scrollTop > 800){
     align-items: center;
     justify-content: flex-end;
     top: 63%;
-    left: 3%;
+    left: 4%;
     
   }
   .warp_bottom_img>.img_address{
@@ -1030,7 +1034,10 @@ if(scrollTop > 800){
       position: absolute;
         top: 77%;
         color: white;
-        left: 3%;
+        left: 4%;
+        p{
+          font-family: 'OPPOSans_B';
+        }
       img{
         width: 100%;
       }
@@ -1059,9 +1066,9 @@ if(scrollTop > 800){
       // display: flex;
       top: 10%;
       flex-wrap: wrap;
-      left: 6%;
+      left: 4%;
       h1{
-        font-size: 16.4vw;
+        font-size: 19vw;
         color: white;
         width: -moz-fit-content;
         width: fit-content;
@@ -1134,7 +1141,7 @@ font-size: 60px!important;
     margin-top: 20%;
 
     .videoStyle{
-      width: 95%;
+      width: 92%;
       background: black;
       height: 600px;
     }
@@ -1149,14 +1156,15 @@ font-size: 60px!important;
      background: rgba(0, 0, 0, 0.6);
    }
    .agi_shwo{
-    margin-left: 2.8%;
+    margin-left: 4%;
+    margin-right: 4%;
     margin-top: 30%;
    }
 
 
    .agi_shwo_item{
       margin-top: 30%;
-      padding-right: 2%;
+      // padding-right: 2%;
 
     h2{
       display: flex;
@@ -1170,7 +1178,7 @@ font-size: 60px!important;
     // }
     p{
       display: flex;
-      font-size: 3.6vw;
+      font-size: 3.5vw;
       color: white;
       background: black;
       width: fit-content;

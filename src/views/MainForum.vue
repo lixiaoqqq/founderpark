@@ -182,7 +182,7 @@ beforeRouteEnter(to,from,next){
         //  big_box.style.display='none'
           console.log('请使用手机查看网站');
         //  alert('请使用手机访问网站')
-         next('/404')
+         next('/desktop')
      }else{
       next()
   }

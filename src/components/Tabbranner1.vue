@@ -206,7 +206,7 @@
             <img src="../assets/lizhifern.png" alt="">
            </div>
            <div style="
-                 margin-left: 0px;
+                 margin-left: 2%;
 " class="tablist_itme_list_wz">
                   <p>
                     李志飞
@@ -659,6 +659,7 @@ children:[
 .guest_items {
 display: flex;
 padding: 6% 4%;
+margin-left: 1%;
 
 .guest_items_right{
   margin-left: 30%;
@@ -681,7 +682,9 @@ padding: 6% 4%;
     border-radius: 50%;
     position: relative;
     top: -3px;
-    left: -2px;
+    left: -5px;
+    z-index: -99;
+
 }
 
 .guest_items_left p::before {
@@ -693,7 +696,10 @@ padding: 6% 4%;
     border-radius: 50%;
     position: relative;
     top: -3px;
-    left: -2px;
+    left: -5px;
+    z-index: -99;
+
+
 
 }
 
@@ -706,7 +712,9 @@ padding: 6% 4%;
     border-radius: 50%;
     position: relative;
     top: -3px;
-    left: -2px;
+    left: -5px;
+    z-index: -99;
+
 
 }
 .tablist_itme_lists{
@@ -724,6 +732,7 @@ padding: 6% 4%;
     border-radius: 50%;
     position: relative;
     top: -3px;
+    z-index: -99;
 }
 .conduction_space{
   display: flex;

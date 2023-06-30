@@ -183,7 +183,7 @@ font-size: 60px!important;
 }
 
 .button_nav {
-  padding-left:5%;
+  padding-left:4%;
   margin-top: 15%;
   h1{
     margin-top: 1%;
